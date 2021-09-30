@@ -1,0 +1,22 @@
+@import "../../styling/shared";
+.example-spacer {
+    flex: 1 1 auto;
+}
+mat-toolbar {
+    padding: 18px 140px;
+    background-color: $NAVY_DARK_BLUE !important;
+    position: relative;
+    z-index: 1;
+    span {
+        font-size: 18px;
+        color: $WHITE;
+    }
+
+    .logo {
+        color: $CYAN;
+    }
+}
+
+.nav-item {
+    width: 50%;
+}

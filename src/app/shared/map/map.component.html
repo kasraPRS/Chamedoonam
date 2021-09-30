@@ -1,0 +1,13 @@
+<agm-map *ngIf="locationInfo.length > 0" [latitude]="locationInfo[0]['lat']" [longitude]="locationInfo[0]['lng']"
+    class="{{klass}}" [scrollwheel]="true" [maxZoom]="13" [minZoom]="10">
+
+    <agm-marker *ngFor="let loc of locationInfo" [latitude]="loc.lat" [longitude]="loc.lng">
+        <agm-info-window *ngIf="accommodations" [isOpen]="true">
+            <div *ngFor="let data of accommodations">
+                <app-regular-show-boxing *ngIf="loc.id === data.id" [datas]="data" [title]="'برترین  اقامتگاه' "
+                    [mapShowingBox]="'mapShowingBox'" [fxLayout]="'row'" [fxLayoutAlign]="'center center'">
+                </app-regular-show-boxing>
+            </div>
+        </agm-info-window>
+    </agm-marker>
+</agm-map>

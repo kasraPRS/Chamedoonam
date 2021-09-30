@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.943" height="25.665" viewBox="0 0 30.943 25.665">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#0cc}
+        </style>
+    </defs>
+    <g id="prefix__wc" transform="translate(0 -43.667)">
+        <path id="prefix__Path_77013" d="M5.278 43.667v9.347H1.813v-6.838H0v20.647h1.813v-6.838h3.465v9.347h25.665V43.667zM29.13 67.519H7.091V45.48H29.13zM1.813 54.827h3.465v3.344H1.813z" class="prefix__cls-1" data-name="Path 77013"/>
+        <path id="prefix__Path_77014" d="M330.428 192.705a3.835 3.835 0 0 0 2.493-.913 7.406 7.406 0 0 0 .954-1.078l-1.389-1.165a4.992 4.992 0 0 1-.77.889 2.048 2.048 0 0 1-1.288.454 2.538 2.538 0 1 1 1.418-4.643l.751.508 1.015-1.5-.751-.508a4.351 4.351 0 1 0-2.433 7.959z" class="prefix__cls-1" data-name="Path 77014" transform="translate(-306.37 -131.855)"/>
+        <path id="prefix__Path_77015" d="M158.391 191l1.72-.012 1.412-4.882 1.411 4.894 1.719-.012 1.669-8.385-1.778-.354-.917 4.609-1.269-4.4h-1.666l-1.273 4.4-.913-4.618-1.779.352z" class="prefix__cls-1" data-name="Path 77015" transform="translate(-147.255 -130.193)"/>
+    </g>
+</svg>

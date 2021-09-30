@@ -1,0 +1,20 @@
+<form [formGroup]="formData">
+
+    <div class="sorting" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" dir="rtl">
+        <div class="title" fxFlex="15">
+            <p>مرتبسازی :</p>
+        </div>
+        <div class="button-holder" fxFlex="70" fxLayoutGap="16px">
+            <button mat-stroked-button>ارزانترین</button>
+            <button mat-stroked-button>گرانترین</button>
+            <button mat-stroked-button>تخفیف دار</button>
+            <button mat-stroked-button>بیشترین امتیاز</button>
+            <button mat-stroked-button>بیشترین درخواست</button>
+        </div>
+        <div class="show-on-map" fxFlex="15" fxLayout="column">
+            <mat-slide-toggle formControlName="showOnMap"></mat-slide-toggle>
+            <span>نمایش بر روی نقشه</span>
+        </div>
+
+    </div>
+</form>

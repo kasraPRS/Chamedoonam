@@ -1,0 +1,38 @@
+<div [formGroup]="formData">
+    <!-- <div fxLayout="row" id="datepicker-group" class="{{klass}}">
+        <mat-form-field appearance="outline">
+            <mat-label>کی بریم؟</mat-label>
+            <input matInput [matDatepicker]="pickerFrom" [min]="minDate" [max]="maxDate" [value]="checkinDateValue"
+                (dateChange)="addEventFromDate($event)" placeholder="کی بریم؟">
+            <mat-datepicker-toggle matSuffix [for]="pickerFrom">
+            </mat-datepicker-toggle>
+            <mat-datepicker #pickerFrom></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>کی بیاییم؟</mat-label>
+
+            <input matInput [matDatepicker]="pickerTo" [min]="minDate" [max]="maxDate" [value]="checkoutDateValue"
+                placeholder="کی بیاییم؟" (dateChange)="addEventToDate($event)">
+            <mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
+            <mat-datepicker #pickerTo></mat-datepicker>
+        </mat-form-field>
+    </div> -->
+
+
+    <div id="datepicker-group" class="{{klass}}">
+        <mat-form-field appearance="outline" style="width: 100%;">
+            <mat-label>کی بریم؟ کی بیاییم؟</mat-label>
+            <mat-date-range-input [rangePicker]="picker" [min]="minDate">
+                <input matStartDate placeholder="کی بریم؟" (dateChange)="addEventFromDate($event)"
+                    [value]="checkinDateValue">
+                <input matEndDate placeholder="کی بیاییم" (dateChange)="addEventToDate($event)"
+                    [value]="checkoutDateValue">
+            </mat-date-range-input>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+
+        </mat-form-field>
+    </div>
+
+</div>

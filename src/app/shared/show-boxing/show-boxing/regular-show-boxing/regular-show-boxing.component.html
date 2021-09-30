@@ -1,0 +1,39 @@
+<mat-card fxLayout="column" fxLayoutAlign="center" (click)="onClick()" class="show-boxing {{mapShowingBox}}">
+
+
+    <div *ngIf="isLoading" [fxLayout]="'row'" [fxLayoutAlign]="'center center'">
+        <mat-spinner diameter="24" strokeWidth="2"></mat-spinner>
+    </div>
+    <img class="hidden-img" src="{{datas.images}}" (error)="onImgError()" (load)="onImgLoaded()" alt="" />
+
+    <div *ngIf="!isLoading && !showDefaultImage" class="fading-img" [ngClass]="{'is-fading-in':isFadingIn}">
+
+        <div class="img-hover-zoom img-hover-zoom--blur">
+            <img src="{{datas.images}}">
+        </div>
+
+    </div>
+
+
+    <mat-card-content fxLayout="column" fxLayoutAlign="space-between start">
+        <div fxLayout="row" fxLayoutAlign="space-between" id="rating">
+            <span>
+                <p *ngIf="datas.instanteBooking">رزرو آنی</p>
+                <p *ngIf="!datas.instanteBooking">رزرو با تایید میزبان</p>
+            </span>
+            <div>
+                <app-rating [rating]="datas.totalScore"></app-rating>
+            </div>
+        </div>
+
+
+        <span>{{datas.address}}</span>
+
+        <span class="title-small"><b matTooltip="{{datas.title}}" matTooltipPosition="below">{{datas.title}}</b></span>
+
+        <div fxLayout="row" fxLayoutAlign="space-between" dir="rtl" id="price">
+            <span>هر شب/ تومان</span>
+            <span class="price-number">{{datas.price| friendlyPrice}}</span>
+        </div>
+    </mat-card-content>
+</mat-card>

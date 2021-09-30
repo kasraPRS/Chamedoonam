@@ -1,0 +1,27 @@
+@import "../../styling/shared";
+.map-holder {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .map {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        img {
+            width: 100%;
+        }
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: rgba(0, 238, 255, 0.397);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

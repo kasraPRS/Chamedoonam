@@ -1,0 +1,90 @@
+<!-- <div class="wrapper-specific"> -->
+<mat-card fxLayout="column" fxLayoutGap="16px" class="holder">
+    <mat-card-header>
+        <mat-form-field appearance="fill">
+            <mat-label>مرتب سازی</mat-label>
+            <mat-select (selectionChange)="sorting($event)">
+                <mat-option *ngFor="let item of dicItems" [value]="item.en">
+                    {{item.fa}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-header>
+    <mat-card *ngFor="let item of userReservesList">
+        <div fxLayout="row" fxLayoutAlign="space-between start" dir="rtl">
+            <div class="image-holder">
+                <img src="{{item.image}}">
+            </div>
+
+
+            <div class="data" fxLayout="column" fxLayoutAlign="space-around start">
+                <p>{{item.title}}</p>
+                <p>{{item.type}}</p>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px">
+                    <p>تعداد شب ها</p>
+                    <p>{{item.duration}}</p>
+                </div>
+            </div>
+
+            <div class="data" fxLayout="column" fxLayoutAlign="space-between center" fxFlex="25">
+
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px">
+                    <p>وضعیت رزرو</p>
+
+                    <span *ngFor="let i of test | peymentFilter:item.statusName">
+                        <p>{{i.fa}}</p>
+                    </span>
+
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px">
+                    <p>زمان ورود</p>
+                    <p class="blue-berry">{{item.checkinDate}}</p>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px">
+                    <p>زمان خروج</p>
+                    <p class="blue-berry">{{item.checkOutDate}}</p>
+                </div>
+            </div>
+
+            <div class="data" fxLayout="column" fxLayoutAlign="space-around start">
+
+
+                <div fxLayout="column" fxLayoutGap="16px">
+                    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px"
+                        *ngIf="!(item.orderStatus === 6 || item.orderStatus === 8)">
+                        <p>مبلغ تخفیف</p>
+                        <p>{{item.discountAmount| friendlyPrice}}</p>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px">
+                        <p>مبلغ قابل پرداخت</p>
+                        <!-- <p>{{item.totalAmount - item.discountAmount| friendlyPrice}}</p> -->
+                        <p>{{item.totalAmount | friendlyPrice}}</p>
+                    </div>
+
+                    <div fxLayout="column" fxLayoutGap="16px" *ngIf="item.orderStatus === 8">
+                        <button mat-stroked-button class="submit-btn"
+                            (click)="payRequest(item.orderStatus)">پرداخت</button>
+                        <mat-radio-group aria-label="Select an option" fxLayout="row" fxLayoutAlign="space-around start"
+                            fxLayoutGap="16px">
+                            <mat-radio-button (change)="radioChange($event)" value="1">پرداخت با درگاه بانک
+                            </mat-radio-button>
+                            <mat-radio-button (change)="radioChange($event)" value="2">پرداخت با کیف پول
+                            </mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div fxLayout="row" fxLayoutAlign="space-between end" dir="rtl">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="40px">
+                <p>آدرس</p>
+                <p>{{item.address}}</p>
+            </div>
+        </div>
+    </mat-card>
+</mat-card>
+
+<!-- </div> -->

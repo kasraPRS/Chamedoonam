@@ -1,0 +1,12 @@
+<div class="wrapper mt-85 mb-20">
+    <div fxLayout="row" fxLayoutAlign="space-around end">
+        <button mat-icon-button [disabled]="!paginationItems.has_Previous" (click)="onPriviousPageClick()">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <p>تعداد جستجو : {{paginationItems.total_Count}}</p>
+
+        <button mat-icon-button [disabled]="!paginationItems.has_Next" (click)="onNextPageClick()">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+    </div>
+</div>

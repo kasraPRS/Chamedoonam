@@ -1,0 +1,62 @@
+@import "../../styling/shared";
+#vertical-show-boxing {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    #rating {
+        width: 100%;
+    }
+    #price {
+        width: 100%;
+    }
+    .price-number {
+        color: $HOT_PINK;
+    }
+    // img {
+    //     border-radius: 8px !important;
+    // }
+
+    .title-small {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
+    mat-card {
+        font-size: 14px;
+        color: $DUST;
+        width: 100%;
+        background: transparent !important;
+        mat-card-content {
+            padding: 16px !important;
+        }
+    }
+}
+.mat-card-image {
+    // height: calc(100% - 140px) !important;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 8px !important;
+}
+mat-card {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+}
+
+.title {
+    font-size: 28px !important;
+    color: #000033;
+}
+
+.regular {
+    .mat-card-image {
+        height: calc(100% - 80px);
+    }
+}
+mat-card {
+    background: transparent !important;
+    cursor: pointer;
+}

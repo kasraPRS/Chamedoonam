@@ -1,0 +1,19 @@
+<div>
+    <div id="counter" fxLayout="row" fxLayoutAlign="space-between center">
+        <span>{{title}}</span>
+        <div class="counter-btn-group" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="16px" dir="ltr">
+            <button mat-mini-fab class="counter-add-btn" (click)="$event.stopPropagation(); add();">
+                <mat-icon>add</mat-icon>
+            </button>
+
+            <div [formGroup]="formData">
+                <span>{{countParam}} نفر</span>
+            </div>
+
+            <!-- </mat-form-field> -->
+            <button mat-mini-fab class="counter-remove-btn" (click)="$event.stopPropagation(); remove();">
+                <mat-icon>remove</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+@import "../../styling/shared";
+.calculator {
+    width: 100%;
+    .calculator-days {
+        width: 100%;
+        #dayCount {
+            color: $CYAN;
+        }
+        #peopleCount {
+            color: $HOT_PINK;
+        }
+    }
+}

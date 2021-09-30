@@ -1,0 +1,63 @@
+@import "../../styling/shared";
+
+#container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    #content-container {
+        height: calc(100% - 64px);
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .animation-container {
+        flex-grow: 1;
+        background-color: $WHITE;
+    }
+
+    app-footer {
+        margin-top: 95px;
+        z-index: 1;
+    }
+}
+
+.wrapper-specific {
+    margin-right: 316px;
+    margin-left: 316px;
+    // height: auto;
+    .navigation-wrapper {
+        margin-top: 82px;
+        span {
+            color: $DUST;
+        }
+        img {
+            width: 72px;
+            height: auto;
+        }
+    }
+}
+
+// @include wide_desktop {
+//     .wrapper-specific {
+//         margin-right: 216px;
+//         margin-left: 216px;
+//     }
+// }
+
+@include mid_desktop {
+    .wrapper-specific {
+        margin-right: 216px;
+        margin-left: 216px;
+    }
+}
+
+@include desktop {
+    .wrapper-specific {
+        margin-right: 316px;
+        margin-left: 316px;
+    }
+}

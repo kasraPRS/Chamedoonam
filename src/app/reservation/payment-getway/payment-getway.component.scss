@@ -1,0 +1,53 @@
+@import "../../styling/shared";
+.wrapper {
+    margin-top: 95px;
+}
+#notif {
+    width: 100%;
+    p {
+        color: $DUST;
+    }
+}
+
+#about_accommodation {
+    width: 100%;
+    mat-card {
+        background: $CYAN_LIGHT;
+        mat-card-title {
+            p {
+                color: $CYAN;
+                font-size: 24px;
+            }
+        }
+        mat-card-subtitle {
+            p {
+                color: $DUST;
+                font-size: 16px;
+            }
+        }
+        mat-card-content {
+            background-color: $GRAY_100;
+            #list {
+                width: 100%;
+                padding: 32px;
+
+                .item {
+                    padding: 8px;
+                }
+            }
+        }
+    }
+
+    #payment {
+        background: $WHITE;
+    }
+}
+
+.btn-group {
+    width: 100%;
+    margin-top: 80px;
+    button {
+        width: 25% !important;
+    }
+    margin-bottom: 132px;
+}

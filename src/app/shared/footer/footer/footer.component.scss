@@ -1,0 +1,99 @@
+@import "../../../styling/shared";
+
+.footer {
+    border-top: 1px solid $DUST;
+    padding-top: 63px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    // bottom: 0;
+    // left: 0;
+    // position: fixed;
+    // position: fixed;
+    hr {
+        width: 90%;
+        margin-bottom: 5px !important;
+    }
+    .section {
+        width: 100%;
+        height: 100%;
+        // img {
+        //     width: 100%;
+        //     height: auto;
+        // }
+    }
+    .title {
+        font-size: 24px;
+    }
+
+    .footer-wrapper {
+        height: 100%;
+        margin-right: 75px;
+        margin-left: 75px;
+        #ribbon {
+            border-top: 1px solid $DUST;
+        }
+        .ribbon {
+            width: 100%;
+
+            .col-section {
+                width: 50%;
+            }
+        }
+    }
+
+    p {
+        width: 90%;
+    }
+
+    @include wide_desktop {
+        .section {
+            width: 100%;
+        }
+        .title {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .footer-wrapper {
+            width: 1700px;
+        }
+    }
+    @include mid_desktop {
+        .section {
+            width: 100%;
+        }
+        .title {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+        }
+        .footer-wrapper {
+            max-width: 1290px;
+        }
+    }
+    @include desktop {
+        .section {
+            width: 100%;
+        }
+        .title {
+            font-size: 18px;
+        }
+        p {
+            font-size: 12px;
+        }
+        .footer-wrapper {
+            max-width: 990px;
+        }
+    }
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $DUST;
+}
+a:hover {
+    color: $CYAN;
+}

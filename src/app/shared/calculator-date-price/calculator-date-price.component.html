@@ -1,0 +1,68 @@
+<div class="calculator" fxLayout="column" fxLayoutGap="16px" fxLayoutAlign="space-between center">
+
+    <div class="calculator-days" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end">
+        <span>روزهای عادی</span>
+
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+            <span dir="rtl">{{weekendPrice| friendlyPrice}}</span>
+            <span>
+                x
+            </span>
+
+            <span id="dayCount">{{night}}</span>
+            <span>
+                x
+            </span>
+            <span id="peopleCount">{{passenger}}</span>
+        </div>
+    </div>
+    <!-- <div class="calculator-days" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end" *ngIf="!isHoliday">
+        <span>روزهای آخر هفته</span>
+
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+
+            <span>{{pricePerNight| friendlyPrice}}</span>
+            <span>
+                x
+            </span>
+            <span id="dayCount">{{daysCount}}</span>
+            <span>
+                x
+            </span>
+            <span id="peopleCount">{{peopleCount}}</span>
+
+        </div>
+
+    </div>
+    <div class="calculator-days" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end" *ngIf="isHoliday">
+        <div>
+            <span>روزهای تعطیل</span>
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+            <span>{{holidayPrice | friendlyPrice}}</span>
+            <span>
+                x
+            </span>
+            <span id="dayCount">{{daysCount}}</span>
+            <span>
+                x
+            </span>
+            <span id="peopleCount">{{peopleCount}}</span>
+        </div>
+
+    </div> -->
+
+    <!-- <div class="final-count">
+        <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end">
+            <span>جمع کل</span>
+            <div class="calc" fxLayout="row-reverse" fxLayoutAlign="space-between end" fxLayoutGap="8px">
+                <span>{{peopleCount * daysCount * weekendPrice | friendlyPrice}}</span>
+            </div>
+        </div>
+
+    </div> -->
+
+</div>

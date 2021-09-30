@@ -1,0 +1,43 @@
+@import "../../../styling/shared";
+
+.primary {
+    color: $WHITE;
+    background-color: $BLUE_BERRY;
+}
+
+.secondary {
+    margin-top: 20px;
+    color: $WHITE;
+    background-color: $CYAN;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+#navigation-loading {
+    display: block;
+    height: 4px;
+    overflow: hidden;
+    transition: opacity 250ms linear;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    top: 0;
+}
+
+span {
+    cursor: pointer;
+    font-size: 16px;
+    color: $HOT_PINK;
+    text-decoration: none;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+p {
+    width: 70%;
+}

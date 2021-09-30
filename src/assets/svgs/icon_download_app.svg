@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <g id="prefix__icon_download_app" data-name="icon download app" transform="translate(-508 -16)">
+        <path id="prefix__Rectangle_3594" fill="none" d="M0 0H32V32H0z" data-name="Rectangle 3594" transform="translate(508 16)"/>
+        <path id="prefix__icon_app" fill="#fff" d="M12.65 25.3A12.65 12.65 0 0 1 3.705 3.705a12.65 12.65 0 1 1 17.89 17.89A12.567 12.567 0 0 1 12.65 25.3zM6 15.267V19a.934.934 0 0 0 .933.933h12.134A.934.934 0 0 0 20 19v-3.733h-1.867v2.8H7.867v-2.8zm3.734-3.733a.467.467 0 0 0-.351.774l3.266 3.733a.466.466 0 0 0 .7 0l3.267-3.733a.467.467 0 0 0-.351-.774H14.4V5.468A.468.468 0 0 0 13.934 5h-1.867a.467.467 0 0 0-.466.467v6.066z" data-name="icon app" transform="translate(512 19)"/>
+    </g>
+</svg>

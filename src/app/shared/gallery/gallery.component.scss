@@ -1,0 +1,46 @@
+@import "../../styling/shared";
+.slide .slick-slide {
+    width: 100%;
+}
+
+.hooker {
+    height: 768px;
+    width: 1024px !important;
+    border-radius: 8px;
+}
+
+.gallery-wrapper {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+@include mid_desktop {
+    .gallery-wrapper {
+        margin-right: 140px;
+        margin-left: 140px;
+    }
+    .hooker {
+        height: 500px;
+        width: 815px !important;
+        border-radius: 8px;
+    }
+}
+
+@include desktop {
+    .gallery-wrapper {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .hooker {
+        height: 520px;
+        width: 615px !important;
+        border-radius: 8px;
+    }
+}
+
+.close-btn {
+    width: 10%;
+    height: 25px;
+    line-height: 25px;
+    left: -100px;
+}

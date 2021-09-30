@@ -1,0 +1,30 @@
+@import "./variables";
+
+@mixin wide_desktop {
+    @media screen and (max-width: $wideDesktop) {
+        @content;
+    }
+}
+
+@mixin mid_desktop {
+    @media screen and (min-width: $midDesktop) and (max-width: $midDesktopSecond) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $horizantal_tablet) {
+        @content;
+    }
+}
+@mixin verticalTablet {
+    @media screen and (max-width: $vertical_tablet) {
+        @content;
+    }
+}

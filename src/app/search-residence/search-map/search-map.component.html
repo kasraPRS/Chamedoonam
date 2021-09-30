@@ -1,0 +1,24 @@
+<div class="mt-85" fxLayout="row" fxLayoutAlign="space-between start" fxLayoutGap="18px">
+    <div id="map" fxFlex="70">
+
+        <app-map [locationInfo]="onTouchLocation" [accommodations]="accommodations"
+            [allLocations]="accomodationsLocationsAll">
+        </app-map>
+
+    </div>
+    <div id="cardse" fxFlex="30">
+
+        <vertical-show-boxing *ngFor="let data of accommodations" [datas]="data" [klass]="'regular'"
+            [title]="'برترین  اقامتگاه' " [fxLayout]="'row'" [fxLayoutAlign]="'center center'">
+        </vertical-show-boxing>
+
+
+    </div>
+</div>
+
+<div class="wrapper" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="50px">
+    <img src="assets/message/stop.svg">
+
+    <p class="err-msg">جستجوی شما نا‌موفق بوده است</p>
+
+</div>

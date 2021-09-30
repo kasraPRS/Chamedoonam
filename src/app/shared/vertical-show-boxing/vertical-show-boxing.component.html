@@ -1,0 +1,39 @@
+<mat-card id="vertical-show-boxing" fxLayout="row" fxLayoutGap="17px" dir="rtl" fxFlexAlign="center center"
+    (click)="onClick()" (mouseover)="sendLocation(datas.id)">
+    <img mat-card-image src="{{datas.images}}" fxFlex="50">
+    <mat-card-content fxLayout="column" fxLayoutAlign="space-between none" fxFlex="50" fxLayoutGap="16px">
+
+        <div fxLayout="row" fxLayoutAlign="space-between" id="rating">
+            <div>
+                <app-rating [rating]="datas.totalScore"></app-rating>
+            </div>
+
+
+            <span *ngIf="klass === 'regular'">
+                <p *ngIf="datas.instanteBooking">رزرو آنی</p>
+                <p *ngIf="!datas.instanteBooking">رزرو با تایید میزبان</p>
+            </span>
+            <span *ngIf="klass === 'horizontal'"><b>{{datas.totalScore}}</b></span>
+        </div>
+
+        <span *ngIf="klass === 'horizontal'"> {{datas.type}}</span>
+
+
+
+
+
+
+        <span *ngIf="klass === 'regular'">{{datas.address}}</span>
+
+        <span class="title-small"><b matTooltip="{{datas.title}}" matTooltipPosition="below">{{datas.title}}</b></span>
+
+        <div fxLayout="row" fxLayoutAlign="space-between" dir="rtl" id="price">
+            <span *ngIf="klass === 'regular'">هر شب/ تومان</span>
+            <span *ngIf="klass === 'horizontal'">هر نفر/ تومان</span>
+            <span class="price-number">{{datas.price}}</span>
+        </div>
+
+    </mat-card-content>
+</mat-card>
+
+<hr>

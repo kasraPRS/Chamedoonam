@@ -1,0 +1,175 @@
+<div class="filter" dir="rtl">
+    <div class="wrapper" fxLayoutGap="16px">
+        <div fxFlex="20" fxLayout="row" fxLayoutAlign="space-between center">
+            <div class="logo">
+                <img src="assets/svgs/logo.svg">
+            </div>
+        </div>
+
+        <form [formGroup]="formData" fxFlex="80" fxLayoutGap="16px" fxLayout="row" fxLayoutAlign="space-between start">
+
+            <div class="location-search" fxLayoutGap="16px" fxLayout="column">
+                <div class="location">
+                    <app-search-box [formData]="formData" [ctrlName]="'locationId'" [isProvince]="'isProvince'"
+                        [klass]="'custome-input-field'">
+                    </app-search-box>
+
+                </div>
+
+                <div class="location-search-options" fxLayout="row">
+
+                    <button mat-stroked-button color="basic" [matMenuTriggerFor]="accommodation"
+                        style="margin-left: 16px;">نوع
+                        اقامتگاه</button>
+                    <mat-menu #accommodation="matMenu">
+
+                        <mat-selection-list (click)="$event.stopPropagation();" formControlName="types">
+                            <mat-list-option *ngFor="let option of type" [value]="option.id">
+                                {{option.title}}
+                            </mat-list-option>
+
+                        </mat-selection-list>
+
+                    </mat-menu>
+
+
+                    <button mat-stroked-button color="basic" [matMenuTriggerFor]="priceLimit">محدوده قیمت</button>
+
+                    <mat-menu #priceLimit>
+                        <div id="priceLimit">
+                            <div fxLayoutGap="16px">
+                                <span><b>محدودیت قیمت</b></span>
+                            </div>
+                            <div *ngIf="priceRenge" (click)="$event.stopPropagation();">
+                                <ng5-slider [(value)]="priceRenge.min" [(highValue)]="priceRenge.max"
+                                    [options]="optionss">
+                                </ng5-slider>
+                            </div>
+
+                        </div>
+                    </mat-menu>
+
+                </div>
+
+            </div>
+
+            <div class="date-options" fxLayoutGap="16px" fxLayout="column">
+                <div class="date">
+                    <app-date [klass]="'custome-input-field'" [formData]="formData" [checkInDate]="'checkInDate'"
+                        [checkOutDate]="'checkOutDate'" [checkinDateValue]="checkinDateValue"
+                        [checkoutDateValue]="checkoutDateValue">
+                    </app-date>
+                </div>
+                <div class="date-serach-options" fxLayout="row">
+
+
+                    <button mat-stroked-button color="basic" [matMenuTriggerFor]="readyToTake"
+                        style="margin-left: 16px;">اماده تحویل</button>
+                    <mat-menu #readyToTake fxLayout>
+                        <div fxLayout="column" fxLayoutGap="15px">
+                            <div fxLayout="row" fxLayoutAlign="space-between center">
+                                <span>آماده تحویل</span>
+                                <mat-slide-toggle (click)="$event.stopPropagation();" [disabled]="disabled"
+                                    formControlName="instantBooking"></mat-slide-toggle>
+                            </div>
+
+                            <p>اقامتگاه‌های بدون نیاز به تایید میزبان (رزرو فوری)</p>
+
+                        </div>
+
+
+                    </mat-menu>
+
+
+                    <button mat-stroked-button color="basic" [matMenuTriggerFor]="rooms"
+                        style="margin-left: 16px;">اتاقها</button>
+                    <mat-menu #rooms fxLayout="column" fxLayoutGap="15px">
+                        <div fxLayout="column" fxLayoutGap="15px">
+
+                            <app-counter [formData]="formData" [ctrlName]="'doubleBedCount'"
+                                [title]="'تعداد تخت دونفره'" [countParam]="formData.value.doubleBedCount">
+                            </app-counter>
+
+                            <app-counter [formData]="formData" [ctrlName]="'singleBedCount'"
+                                [title]="'تعداد تخت یک نفره'" [countParam]="formData.value.singleBedCount">
+                            </app-counter>
+
+                            <app-counter [formData]="formData" [ctrlName]="'roomCount'" [title]="'تعداد اتاق'"
+                                [countParam]="formData.value.roomCount">
+                            </app-counter>
+
+                        </div>
+
+                    </mat-menu>
+
+
+
+
+
+                    <button mat-stroked-button color="basic" [matMenuTriggerFor]="moreFilters"
+                        style="font-size: 10px;">فیلتر های
+                        بیشتر</button>
+
+                    <mat-menu #moreFilters fxLayout="column" fxLayoutGap="15px">
+                        <mat-selection-list formControlName="rules" (click)="$event.stopPropagation();">
+                            <mat-list-option *ngFor="let option of rules" [value]="option.id">
+                                {{option.title}}
+                            </mat-list-option>
+
+                        </mat-selection-list>
+                        <hr>
+
+
+                        <div fxLayout="column" fxLayoutGap="15px">
+                            <app-counter [formData]="formData" [ctrlName]="'bathRoomCount'" [title]="'حمام'"
+                                [countParam]="formData.value.bathRoomCount">
+                            </app-counter>
+
+                            <app-counter [formData]="formData" [ctrlName]="'wcCount'" [title]="'دستشویی'"
+                                [countParam]="formData.value.wcCount">
+                            </app-counter>
+
+                        </div>
+                        <hr>
+                        <mat-selection-list (click)="$event.stopPropagation();" formControlName="options">
+                            <span>قوانین اقامتگاه</span>
+                            <mat-list-option *ngFor="let option of options" [value]="option.id">
+                                {{option.title}}
+                            </mat-list-option>
+
+                        </mat-selection-list>
+
+                    </mat-menu>
+
+
+                </div>
+
+            </div>
+            <div class="counter">
+                <div class="counter-dropdown">
+                    <button mat-stroked-button color="basic" [matMenuTriggerFor]="guested">مهمانان</button>
+                    <mat-menu #guested fxLayout="column" fxLayoutGap="15px">
+
+                        <app-counter [formData]="formData" [ctrlName]="'passengerCount'" [title]="'مهمانان'"
+                            [countParam]="formData.value.passengerCount">
+                        </app-counter>
+
+                    </mat-menu>
+                </div>
+            </div>
+            <!-- </> -->
+
+
+        </form>
+
+    </div>
+
+</div>
+<!-- <div class="wrapper">
+    <app-sorting></app-sorting>
+</div> -->
+
+
+<!-- </div>
+
+</div> -->

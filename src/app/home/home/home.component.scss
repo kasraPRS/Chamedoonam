@@ -1,0 +1,173 @@
+// @import "../../styling/color.scss";
+@import "../../styling/shared";
+// #navigation {
+//     position: relative;
+// }
+.bg {
+    // background-image: url("../../../assets/images/axe_first.jpg");
+    // width: 100%;
+    height: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+    }
+}
+
+.titr {
+    color: $DUST;
+    font-size: 28px;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+@include wide_desktop {
+    .titr {
+        font-size: 24px;
+    }
+}
+
+@include mid_desktop {
+    .titr {
+        font-size: 18px;
+    }
+}
+@include desktop {
+    .titr {
+        font-size: 16px;
+    }
+}
+
+.title {
+    color: $NAVY_DARK_BLUE;
+    font-size: 24px;
+}
+@include wide_desktop {
+    .title {
+        font-size: 24px;
+    }
+}
+
+@include mid_desktop {
+    .title {
+        font-size: 18px;
+    }
+}
+@include desktop {
+    .title {
+        font-size: 16px;
+    }
+}
+.card-title {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+}
+mat-card {
+    width: 100%;
+    background: transparent !important;
+    padding: 0 !important;
+    img {
+        border-radius: 0 8px 8px 0;
+    }
+}
+.badges {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+}
+
+#myIran {
+    margin-bottom: 132px;
+    cursor: pointer;
+    img {
+        border-radius: 8px !important;
+        object-fit: cover;
+    }
+    .mat-card-image {
+        height: 100%;
+        width: 100%;
+        // transition: 0.5s ease;
+    }
+
+    .img-hover-zoom {
+        border-radius: 8px !important;
+        height: 387px; /* [1.1] Set it as per your need */
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    }
+
+    /* [2] Transition property for smooth transformation of images */
+    .img-hover-zoom--brightness img {
+        transition: transform 1s, filter 1s ease-in-out;
+        // transform-origin: center center;
+        transition: scale(1);
+        filter: brightness(50%);
+        height: 100%;
+    }
+
+    /* The Transformation */
+    .img-hover-zoom--brightness:hover img {
+        filter: brightness(100%);
+        transform: scale(1.2);
+    }
+
+    mat-card-content {
+        position: absolute;
+        bottom: 68px;
+        color: $WHITE;
+        direction: rtl;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+
+    .middle {
+        transition: 0.5s ease;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    @include mid_desktop {
+        .img-hover-zoom {
+            height: 300px;
+        }
+    }
+}
+
+video {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@include wide_desktop {
+    video {
+        height: 450;
+    }
+}
+
+@include mid_desktop {
+    video {
+        height: 300px;
+    }
+}
+@include desktop {
+    video {
+        height: 200px;
+    }
+}
+.more {
+    color: $HOT_PINK;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 16px;
+}

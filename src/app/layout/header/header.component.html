@@ -1,0 +1,45 @@
+<mat-toolbar dir="rtl" fxLayoutAlign="space-between center">
+
+    <div fxLayout="row" fxLayoutGap="40px">
+        <div *ngFor="let nav of navItem[0]">
+            <a href="{{nav.url}}"><span class="{{nav.class}}"><b>{{nav.title}}</b></span></a>
+        </div>
+    </div>
+
+    <!-- <div class="left-side-items">
+        <a [routerLink]="'/auth'" *ngIf="!login"><span>ورود</span></a>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="login && profile">
+            <span>{{profile.firstName + ' ' +  profile.lastName}}</span>
+        </button>
+
+        <mat-menu #menu="matMenu">
+            <profile-card></profile-card>
+        </mat-menu>
+
+    </div> -->
+
+
+    <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="end center" class="nav-item">
+        <a [routerLink]="'/auth'" *ngIf="!login"><span>ورود</span></a>
+
+        <div *ngIf="login && profile">
+            <button mat-icon-button [matMenuTriggerFor]="menu" style="width: 100%;">
+                <span>{{profile.firstName + ' ' +  profile.lastName}}</span>
+                <mat-icon>keyboard_arrow_down</mat-icon>
+
+            </button>
+            <mat-menu #menu="matMenu">
+                <profile-card [profile]="profile"></profile-card>
+            </mat-menu>
+        </div>
+
+
+        <div *ngFor="let nav of navItem[1]">
+            <a class="left-side-items" fxLayout="row" fxLayoutAlign="space-between center" routerLink="{{nav.url}}"><img
+                    src="{{nav.icon}}"><span>{{nav.title}}</span></a>
+        </div>
+
+    </div>
+
+</mat-toolbar>

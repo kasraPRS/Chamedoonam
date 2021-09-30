@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+    <defs>
+        <style>
+            .cls-2{fill:#936}
+        </style>
+    </defs>
+    <g id="icon_city" transform="translate(22077 24666)">
+        <g id="icon-_locatoin" transform="translate(-23787 -24997)">
+            <path id="Rectangle_14" fill="none" d="M0 0H22V22H0z" transform="translate(1710 331)"/>
+        </g>
+        <g id="urban" transform="translate(-22075 -24664)">
+            <g id="Group_9228" transform="translate(12.063 13.5)">
+                <g id="Group_9227">
+                    <path id="Rectangle_4382" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9230" transform="translate(14.056 13.5)">
+                <g id="Group_9229">
+                    <path id="Rectangle_4383" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9232" transform="translate(12.063 10.125)">
+                <g id="Group_9231">
+                    <path id="Rectangle_4384" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9234" transform="translate(14.056 10.125)">
+                <g id="Group_9233">
+                    <path id="Rectangle_4385" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9236" transform="translate(12.063 6.75)">
+                <g id="Group_9235">
+                    <path id="Rectangle_4386" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9238" transform="translate(14.056 6.75)">
+                <g id="Group_9237">
+                    <path id="Rectangle_4387" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9240" transform="translate(14.056 3.375)">
+                <g id="Group_9239">
+                    <path id="Rectangle_4388" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9242" transform="translate(6.236 13.5)">
+                <g id="Group_9241">
+                    <path id="Rectangle_4389" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9244" transform="translate(8.229 13.5)">
+                <g id="Group_9243">
+                    <path id="Rectangle_4390" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9246" transform="translate(6.236 10.125)">
+                <g id="Group_9245">
+                    <path id="Rectangle_4391" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9248" transform="translate(8.229 10.125)">
+                <g id="Group_9247">
+                    <path id="Rectangle_4392" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9250" transform="translate(8.229 6.75)">
+                <g id="Group_9249">
+                    <path id="Rectangle_4393" d="M0 0H1.055V1.5H0z" class="cls-2"/>
+                </g>
+            </g>
+            <g id="Group_9252">
+                <g id="Group_9251">
+                    <path id="Path_77196" d="M17.027 16.945V0h-2.952l-2.883 3.02H8.249l-3.93 4.116v9.809h-1.84v-1.116a1.951 1.951 0 1 0-1.055 0v1.116H0V18h18v-1.055zM1.055 13.951a.9.9 0 1 1 .9.9.9.9 0 0 1-.9-.9zm9.091 2.994H5.374V7.559L8.7 4.075h1.446zm5.827 0H11.2V4.539l3.326-3.484h1.446z" class="cls-2"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

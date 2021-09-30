@@ -1,0 +1,119 @@
+@import "../../styling/shared";
+
+.first-img {
+    border-radius: 16px 0 0 16px;
+    object-fit: cover;
+}
+
+.gutter0 {
+    border-radius: 0 16px 0 0;
+    object-fit: cover;
+}
+.gutter1 {
+    border-radius: 0 0 16px 0;
+    object-fit: cover;
+}
+.background-keeper {
+    width: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.wrapper {
+    margin-top: 94px;
+    position: relative;
+}
+.side-nav {
+    height: 100%;
+    position: sticky;
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+#content {
+    width: 100%;
+    .accommodation-spec {
+        width: 100%;
+        .title {
+            font-size: 32px;
+            color: $DUST;
+            font-family: IRANsanceBold;
+        }
+        .title-cyan {
+            font-size: 20px !important;
+            color: $CYAN;
+            font-family: IRANsanceBold;
+        }
+        .header {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .more-btn {
+            height: 100%;
+        }
+        #show {
+            width: 100%;
+            div {
+                width: 100%;
+            }
+        }
+
+        #special-options {
+            width: 100%;
+            #img-and-title {
+                margin-top: 16px;
+                margin-right: 16px;
+            }
+        }
+
+        #about-accommodation {
+            width: 100%;
+            p {
+                line-height: 25px;
+            }
+        }
+        #accommodation-rules {
+            width: 100%;
+            mat-list {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+        #accommodation-statistics {
+            width: 100%;
+        }
+        #gallery {
+            width: 100%;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #accommodation-review {
+            width: 100%;
+        }
+        .avatar {
+            width: 100%;
+        }
+    }
+}
+
+#content-fluid {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gallery-btn-holder {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .show-gallery {
+        margin-top: -50px;
+        position: absolute;
+        margin-right: 16px;
+    }
+}

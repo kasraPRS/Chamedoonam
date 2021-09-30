@@ -1,0 +1,145 @@
+<mat-card fxLayout="column" fxFlexAlign="center center" dir="rtl">
+    <mat-card-header>
+        <mat-card-title>
+            <div class="titr">{{title}}</div>
+        </mat-card-title>
+
+    </mat-card-header>
+    <mat-card-content fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+        <form [formGroup]="formData">
+
+
+            <app-filter-datepicker [formData]="formData" [startDate]="'startDate'" [endDate]="'endDate'"
+                [weekendDaysFormControlName]="'weekendDaysFormControlName'"
+                [daysFormControlName]="'daysFormControlName'"
+                [daysAndWeekendSelectedFormControlName]="'daysAndWeekendSelectedFormControlName'"
+                [holdidaysFormControlName]="'holdidaysFormControlName'" [pricePerNight]="pricePerNight"
+                [weekendPrice]="weekendPrice" [holidayPrice]="holidayPrice" [weekendDaysPrice]="'weekendDaysPrice'"
+                [normalDaysPrice]="'normalDaysPrice'" [holidaysDaysPrice]="'holidaysDaysPrice'">
+            </app-filter-datepicker>
+
+
+
+
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span>تعداد مهمانان </span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div fxLayout="column" fxLayoutGap="15px">
+                        <app-counter [formData]="formData" [ctrlName]="'guestsCount'" [title]="'نفرات'"
+                            [capacity]="capacity">
+                        </app-counter>
+                    </div>
+
+                </mat-expansion-panel>
+            </mat-accordion>
+
+        </form>
+
+
+
+        <div class="title" fxLayout="row" fxLayoutAlign="space-around center">
+            <span>قیمت</span>
+            <span id="night">شب</span>
+
+            <span id="people">نفر</span>
+
+        </div>
+
+        <div class="calculator" fxLayout="column" fxLayoutGap="16px" fxLayoutAlign="space-between center"
+            *ngIf="formData.valid">
+
+            <div class="calculator-days" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end"
+                *ngIf="(formData.value.daysFormControlName - formData.value.weekendDaysFormControlName - formData.value.holdidaysFormControlName)> 0">
+                <span>روزهای عادی</span>
+
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+                    <span dir="rtl" class="calc">{{pricePerNight| friendlyPrice}}</span>
+                    <span>
+                        x
+                    </span>
+
+                    <span
+                        id="dayCount">{{formData.value.daysFormControlName - formData.value.weekendDaysFormControlName - formData.value.holdidaysFormControlName}}</span>
+                    <span>
+
+                        x
+                    </span>
+                    <span id="peopleCount">{{peopleCount + 1}}</span>
+                </div>
+            </div>
+
+            <div class="calculator-days" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end"
+                *ngIf="formData.value.weekendDaysFormControlName">
+                <span>روزهای آخر هفته</span>
+
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+
+                    <span class="calc">{{weekendPrice| friendlyPrice}}</span>
+                    <span>
+                        x
+                    </span>
+                    <span id="dayCount">{{formData.value.weekendDaysFormControlName}}</span>
+                    <span>
+                        x
+                    </span>
+                    <span id="peopleCount">{{peopleCount + 1}}</span>
+
+                </div>
+
+            </div>
+            <!-- calculate normal days -->
+
+
+
+            <div class="calculator-days" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end"
+                *ngIf="formData.value.holdidaysFormControlName">
+                <div>
+                    <span>روزهای تعطیل</span>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+                    <span class="calc">{{holidayPrice | friendlyPrice}}</span>
+                    <span>
+                        x
+                    </span>
+                    <span id="dayCount">{{formData.value.holdidaysFormControlName}}</span>
+                    <span>
+                        x
+                    </span>
+                    <span id="peopleCount">{{peopleCount + 1}}</span>
+                </div>
+
+            </div>
+
+            <div class="final-count">
+                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between end">
+                    <span>جمع کل</span>
+
+
+                    <div fxLayout="row-reverse" fxLayoutAlign="space-between end" fxLayoutGap="8px">
+                        <span class="calc">
+                            {{ formData.value.normalDaysPrice + 
+                                formData.value.weekendDaysPrice + 
+                                formData.value.holidaysDaysPrice | friendlyPrice}}</span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button class="submit-btn" (click)="onClick()" [disabled]="!formData.valid">ثبت</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,23 @@
+<div id="container">
+    <app-header></app-header>
+    <div #appContainer id="content-container">
+
+
+        <div class="wrapper-specific" fxLayoutGap="32px" fxLayout="column">
+            <div class="navigation-wrapper" fxLayout="row" fxLayoutAlign="space-between center">
+                <div class="navigation-items" *ngFor="let item of userProfileNavigationItems" fxLayout="column"
+                    fxLayoutAlign="space-around center" fxLayoutGap="16px">
+                    <img src="{{item.img}}">
+                    <!-- <mat-icon svgIcon="{{item.img}}"></mat-icon> -->
+
+                    <span>{{item.title}}</span>
+                </div>
+            </div>
+
+            <router-outlet class="outlet-content"></router-outlet>
+        </div>
+
+        <app-footer></app-footer>
+    </div>
+
+</div>

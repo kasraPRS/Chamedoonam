@@ -1,0 +1,136 @@
+@import "../../../../styling/shared";
+
+#show-boxing {
+    // width: 100%;
+    // overflow: hidden;
+    // min-height: 230px;
+    // height: 100%;
+    // min-width: 128px;
+    // padding: 0;
+
+    #rating {
+        width: 100%;
+    }
+
+    #price {
+        width: 100%;
+    }
+
+    .price-number {
+        color: $HOT_PINK;
+    }
+
+    .title-small {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
+    @include mid_desktop {
+        .title-small {
+            font-size: 13px !important;
+        }
+    }
+    mat-card {
+        font-size: 14px;
+        color: $DUST;
+        min-width: 100%;
+        mat-card-content {
+            padding: 16px !important;
+        }
+    }
+}
+
+.mat-card-image {
+    // height: calc(100% - 140px) !important;
+    // height: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 8px !important;
+}
+mat-card {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.title {
+    font-size: 28px !important;
+    color: #000033;
+}
+.img-hover-zoom {
+    height: 100%; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border-radius: 8px;
+}
+.img-hover-zoom--blur img {
+    transition: transform 1s, filter 1s ease-in-out;
+    transform: scale(1);
+    border-radius: 8px;
+    height: 100%;
+}
+
+.img-hover-zoom--blur:hover img {
+    transform: scale(1.2);
+}
+
+@include mid_desktop {
+    .img-hover-zoom {
+        height: 100%; /* [1.1] Set it as per your need */
+    }
+}
+.zoom {
+    transition: transform 0.5s; /* Animation */
+    // width: 200px;
+    // height: 200px;
+    // margin: 0 auto;
+}
+.zoom:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.hidden-img {
+    display: none;
+    opacity: 0;
+    transition: opacity 5s ease-in;
+
+    &.img-loaded {
+        display: block;
+    }
+    &.img-is-fading-in {
+        opacity: 1;
+    }
+}
+
+.fading-img {
+    width: 100%;
+    // height: 100%;
+    opacity: 0;
+    transition: opacity 2s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &.is-fading-in {
+        opacity: 1;
+    }
+}
+
+#default-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s;
+    background-image: url("../../../../../assets/svgs/default_image.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    &.is-fading-in {
+        opacity: 1;
+    }
+}

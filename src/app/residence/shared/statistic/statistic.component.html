@@ -1,0 +1,33 @@
+<div fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="16px">
+    <span class="title-cyan">
+        آمار کلی اقامتگاه
+    </span>
+    <div id="accommodation-statistics" fxLayout="row" fxLayoutAlign="end end" fxLayoutGap="16px">
+
+        <div id="holder" fxFlex="50" fxLayout="column" fxLayoutAlign="end center" fxLayoutGap="16px">
+            <div id="statistic" fxLayout="row" dir="rtl" fxLayoutAlign="space-between center" fxLayoutGap="16px">
+                <span>تطابق اطلاعات</span>
+                <!-- <mat-slider max="{{infoAccuracyScore}}"></mat-slider> -->
+                <app-rating [rating]="infoAccuracyScore"></app-rating>
+            </div>
+
+            <div id="statistic" fxLayout="row" dir="rtl" fxLayoutAlign="space-between center" fxLayoutGap="16px">
+                <span>دسترسی محلی</span>
+                <!-- <mat-slider max="{{localAccessScore}}"></mat-slider> -->
+                <app-rating [rating]="localAccessScore"></app-rating>
+            </div>
+        </div>
+        <div id="holder" fxFlex="50" fxLayout="column" fxLayoutAlign="end center" fxLayoutGap="16px">
+            <div id="statistic" fxLayout="row" dir="rtl" fxLayoutAlign="space-between center" fxLayoutGap="16px">
+                <span>رفتار میزبان</span>
+                <!-- <mat-slider max="{{hostingScore}}"></mat-slider> -->
+                <app-rating [rating]="hostingScore"></app-rating>
+            </div>
+            <div id="statistic" fxLayout="row" dir="rtl" fxLayoutAlign="space-between center" fxLayoutGap="16px">
+                <span>نظافت خانه</span>
+                <!-- <mat-slider max="{{cleanLinessScore}}"></mat-slider> -->
+                <app-rating [rating]="cleanLinessScore"></app-rating>
+            </div>
+        </div>
+    </div>
+</div>

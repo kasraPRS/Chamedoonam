@@ -1,0 +1,43 @@
+@import "../../../styling/shared";
+mat-card {
+    border: none !important;
+    box-shadow: none !important;
+    .avatar {
+        background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+        background-size: cover;
+    }
+    span {
+        font-weight: bold;
+        h4 {
+            font-size: 18px !important;
+        }
+        h5 {
+            font-size: 16px !important;
+        }
+    }
+
+    .primary {
+        background-color: $CYAN;
+        color: $WHITE;
+    }
+    .list--item {
+        display: flex;
+        direction: ltr;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            margin-right: 8px !important;
+        }
+    }
+    .logout {
+        color: $HOT_PINK;
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $DUST;
+}

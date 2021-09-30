@@ -1,0 +1,55 @@
+@import "../../styling/shared";
+#container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    #content-container {
+        height: calc(100vh - 64px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: auto;
+    }
+}
+
+.secondary {
+    color: $WHITE;
+    background-color: $CYAN;
+    width: 100%;
+}
+.close-button {
+    color: $WHITE;
+    background-color: $HOT_PINK;
+}
+.description {
+    p {
+        color: $DUST;
+        font-size: 18px;
+        text-align: right;
+        line-height: 43px;
+        // width: 50%;
+    }
+}
+.gap {
+    position: relative;
+    // height: 150px;
+}
+.simple-layout-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 64px);
+    overflow: auto;
+    padding-top: 64px;
+    direction: rtl;
+    background-color: red($color: #000000) !important;
+}
+.mat-card:not([class*="mat-elevation-z"]) {
+    -webkit-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.75);
+}
+mat-card {
+    max-width: 774px;
+}

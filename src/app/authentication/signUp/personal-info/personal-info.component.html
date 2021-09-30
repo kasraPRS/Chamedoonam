@@ -1,0 +1,42 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+    <form [formGroup]="formData" fxLayout="column" dir="rtl" (ngSubmit)="onSubmit()">
+        <div class="vertical-form-group" fxLayout="row" fxLayoutAlign="space-between center">
+            <mat-form-field appearance="outline" appChFormField>
+                <mat-label>نام</mat-label>
+                <input matInput placeholder=" نام" formControlName="firstName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>نام خانوادگی</mat-label>
+                <input matInput placeholder="نام خانوادگی" formControlName="lastName">
+            </mat-form-field>
+        </div>
+
+        <div fxLayout="column">
+            <mat-form-field appearance="outline">
+                <mat-label>موبایل</mat-label>
+                <input matInput placeholder="موبایل" formControlName="phoneNumber" [disabled]="true">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>ایمیل</mat-label>
+                <input matInput placeholder="ایمیل" formControlName="email" type="email">
+            </mat-form-field>
+        </div>
+
+
+        <div class="vertical-form-group" fxLayout="row" fxLayoutAlign="space-between center">
+            <mat-form-field appearance="outline">
+                <mat-label>رمز عبور جدید</mat-label>
+                <input matInput type="password" formControlName="password">
+
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>تکرار رمز عبور جدید</mat-label>
+                <input matInput type="password">
+
+            </mat-form-field>
+        </div>
+
+
+        <button mat-button class="primary" *ngIf="!isWatingForVerification && f.firstName.valid">ثبت نام</button>
+    </form>
+</div>

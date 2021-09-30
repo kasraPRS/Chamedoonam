@@ -1,0 +1,28 @@
+@import "../../../styling/shared";
+p {
+    text-align: right;
+    direction: rtl;
+    width: 70%;
+}
+.wrapper {
+    margin-top: 70px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.contact-data {
+    width: 100%;
+    direction: rtl;
+}
+span {
+    color: $DUST;
+}
+
+.title {
+    font-family: "IRANsanceBold";
+    color: $CYAN;
+}
+form {
+    width: 100%;
+}

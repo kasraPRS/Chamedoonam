@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.966" height="36.966" viewBox="0 0 36.966 36.966">
+    <g id="prefix__icon_email-white_" data-name="icon email-white" transform="translate(-212.999 -111.001)">
+        <path id="prefix__Rectangle_17" fill="none" d="M0 0H36.966V36.966H0z" data-name="Rectangle 17" transform="translate(212.999 111.001)"/>
+        <g id="prefix__Group_7370" data-name="Group 7370" transform="translate(-198.368 -951.849)">
+            <g id="prefix__email_2_" data-name="email (2)" transform="translate(419.367 1073.849)">
+                <g id="prefix__Group_7369" data-name="Group 7369">
+                    <path id="prefix__Path_76637" fill="#c6c6c6" d="M19.288 69.556a.784.784 0 0 0 .784-.784v-5.136a3.14 3.14 0 0 0-3.136-3.136h-13.8A3.14 3.14 0 0 0 0 63.636v9.056a3.14 3.14 0 0 0 3.136 3.136h13.8a3.14 3.14 0 0 0 3.136-3.136.784.784 0 1 0-1.568 0 1.57 1.57 0 0 1-1.568 1.568h-13.8a1.57 1.57 0 0 1-1.568-1.568V63.8l6.812 4.238a3.117 3.117 0 0 0 3.312 0L18.5 63.8v4.97a.784.784 0 0 0 .788.786zm-8.424-2.85a1.558 1.558 0 0 1-1.656 0l-6.986-4.343a1.56 1.56 0 0 1 .914-.294h13.8a1.56 1.56 0 0 1 .914.295z" data-name="Path 76637" transform="translate(0 -60.5)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

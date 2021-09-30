@@ -1,0 +1,283 @@
+// @import "app/styling/color.scss";
+@import "app/styling/shared";
+/* You can add global styles to this file, and also import other style files */ // @font-face {
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+@font-face {
+    font-family: "IRANsance";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/IRANSans/Farsi_numerals/webFonts/fonts/ttf/IRANSansWeb\(FaNum\).ttf");
+    src: local("IRANSansWeb"), local("IRANSansWeb"),
+        url("assets/fonts/IRANSans/Farsi_numerals/webFonts/fonts/ttf/IRANSansWeb\(FaNum\).ttf");
+}
+@font-face {
+    font-family: "IRANsanceBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/IRANSans/Farsi_numerals/webFonts/fonts/ttf/IRANSansWeb\(FaNum\)_Bold.ttf");
+    src: local("IRANSansWeb"), local("IRANSansWeb"),
+        url("assets/fonts/IRANSans/Farsi_numerals/webFonts/fonts/ttf/IRANSansWeb\(FaNum\)_Bold.ttf");
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 100%;
+}
+
+body * {
+    font-family: IRANsance;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: IRANsance !important;
+    margin: 0 !important;
+}
+
+.titr {
+    color: $DUST;
+    font-size: 28px;
+    margin-right: 10px;
+    font-family: "IRANsanceBold";
+}
+
+.mat-form-field-wrapper {
+    width: 100% !important;
+}
+
+.mat-menu-panel {
+    min-width: 390px !important;
+    max-width: 400px !important;
+}
+
+.wrapper {
+    margin-right: 140px;
+    margin-left: 140px;
+    // height: auto;
+}
+
+@include mid_desktop {
+    .wrapper {
+        margin-right: 100px;
+        margin-left: 100px;
+        max-width: 100%;
+    }
+    .titr {
+        font-size: 24px;
+    }
+}
+
+@include desktop {
+    .wrapper {
+        max-width: 1000px;
+    }
+    .titr {
+        font-size: 20px;
+    }
+}
+.mat-calendar-body-cell-content {
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: 100% !important;
+    line-height: 1;
+    border-width: 0 !important;
+    border-style: solid;
+    border-radius: 0 !important;
+}
+.mat-calendar-body-cell {
+    position: relative;
+    height: 0;
+    line-height: 0;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #cbcbcb;
+}
+.mat-calendar-body-selected {
+    background-color: #00cccc;
+    color: $DUST;
+}
+.mat-datepicker-content .mat-calendar {
+    width: 296px;
+    height: 100% !important;
+}
+// .cdk-overlay-pane {
+//     position: absolute;
+//     pointer-events: auto;
+//     box-sizing: border-box;
+//     z-index: 1000;
+//     display: flex;
+//     max-width: 100%;
+// }
+
+// @include wide_desktop {
+//     .cdk-overlay-pane {
+//         min-height: 100%;
+//     }
+// }
+
+// @include mid_desktop {
+//     .cdk-overlay-pane {
+//         min-height: 50%;
+//     }
+// }
+
+// @include desktop {
+//     .cdk-overlay-pane {
+//         min-height: 50%;
+//     }
+// }
+
+// scrollBar
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $GRAY_400;
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $CYAN;
+}
+
+.custome-input-field {
+    input {
+        color: $WHITE;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+        color: $WHITE !important;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: $WHITE !important;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: $WHITE !important;
+    }
+
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: $WHITE !important;
+    }
+    /* Font color */
+    input.mat-input-element {
+        color: $WHITE !important;
+    }
+    .mat-button-wrapper {
+        svg {
+            color: $WHITE;
+        }
+    }
+    mat-label {
+        color: $WHITE;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-wrapper {
+        margin: 0 !important;
+    }
+    .mat-form-field-wrapper {
+        padding-bottom: 0 !important;
+    }
+}
+
+.mat-menu-panel {
+    padding: 16px;
+}
+.mat-chip-list-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    margin: -4px;
+}
+
+.counter-btn-group {
+    width: 50%;
+    .counter-add-btn {
+        background-color: $CYAN !important;
+        color: $WHITE !important;
+    }
+
+    .counter-remove-btn {
+        background: transparent !important;
+        color: $CYAN !important;
+    }
+}
+.gm-style-iw .gm-style-iw-c {
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    max-width: 248px !important;
+    max-height: 363px !important;
+    min-width: 0px !important;
+}
+
+// .mat-progress-bar-fill:after {
+//     background-color: $CYAN;
+// }
+
+.mat-icon-button {
+    color: $HOT_PINK;
+}
+.mat-expansion-indicator::after {
+    color: $HOT_PINK;
+}
+.submit-btn {
+    margin-top: 20px;
+    color: $WHITE;
+    background-color: $CYAN;
+    width: 100%;
+}
+
+a:hover {
+    color: $CYAN;
+}
+
+.slick-next:before {
+    content: url("assets/gallery/left.svg") !important;
+}
+
+.slick-prev:before {
+    content: url("assets/gallery/right.svg") !important;
+}
+
+.slick-prev {
+    left: -140px !important;
+}
+.slick-next {
+    right: -125px !important;
+}
+
+.mt-85 {
+    margin-top: 85px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

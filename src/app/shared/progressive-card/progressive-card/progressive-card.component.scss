@@ -1,0 +1,60 @@
+@import "../../../styling/shared";
+mat-card {
+    background-color: #f5f5f5;
+}
+// mat-form-field {
+//     font-size: 2em;
+//     min-width: 50%;
+// }
+.box-sizing {
+    width: 398px;
+    height: 476px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    top: 200px;
+    right: 140px;
+    position: absolute;
+    mat-card-header {
+        height: 50px;
+        .titr {
+            color: $DUST;
+            font-family: "IRANsanceBold" !important;
+            font-size: 32px;
+        }
+
+        @include mid_desktop {
+            .titr {
+                font-size: 27px;
+            }
+        }
+
+        @include desktop {
+            .titr {
+                font-size: 18px;
+            }
+        }
+    }
+
+    mat-form-field {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@include mid_desktop {
+    .box-sizing {
+        top: 90px;
+    }
+}
+
+.counter {
+    width: 50%;
+}
+
+button {
+    background-color: $CYAN;
+    margin-top: 20px;
+    color: $WHITE;
+}

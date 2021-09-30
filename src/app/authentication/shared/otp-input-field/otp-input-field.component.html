@@ -1,0 +1,21 @@
+<form [formGroup]="formData" (ngSubmit)="onSubmit()" fxLayout="column" dir="ltr">
+
+    <!-- <mat-form-field appearance="outline">
+        <mat-label>
+            {{label}}
+        </mat-label>
+
+        <input matInput placeholder="کد ارسال شده" formControlName="{{frName}}" inputmode="numeric" pattern="[0-9]*">
+
+        <mat-error *ngIf="f.otp.errors && f.otp.errors['pattern']">
+            کد وارد شده صیحح نمی باشد .
+        </mat-error>
+
+    </mat-form-field> -->
+    <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="config">
+    </ng-otp-input>
+
+
+
+    <button mat-button class="primary" *ngIf="!isWatingForVerification && f.otp.valid">ورود</button>
+</form>

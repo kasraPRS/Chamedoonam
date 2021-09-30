@@ -1,0 +1,48 @@
+<div id="option" fxLayout="column">
+
+    <div class="content-container" fxLayout="row" fxLayoutAlign="space-between start">
+
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="user_meter"></mat-icon>
+            <span>متراژ {{residenceData.area}}</span>
+
+        </div>
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="room"></mat-icon>
+            <span>اتاق {{residenceData.roomCount}}</span>
+        </div>
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="shower"></mat-icon>
+            <span>حمام {{residenceData.bathRoomCount}}</span>
+        </div>
+    </div>
+
+    <div class="content-container" fxLayout="row" fxLayoutAlign="space-between start">
+
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="group"></mat-icon>
+            <span>ظرفیت {{residenceData.hostAccommodationCount}}</span>
+        </div>
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="bed"></mat-icon>
+            <span>یک نفره {{residenceData.singleBedCount}}</span>
+            <span>دو نفره {{residenceData.doubleBedCount}}</span>
+        </div>
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="wc"></mat-icon>
+            <span>تعداد دستشویی {{residenceData.wcCount}}</span>
+        </div>
+    </div>
+    <div class="content-container" fxLayout="row" fxLayoutAlign="space-between start">
+
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="clock_out"></mat-icon>
+            <span>ساعت خروج {{residenceData.checkoutTime}}</span>
+        </div>
+        <div class="options" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon svgIcon="clock_out"></mat-icon>
+            <span>ساعت ورود {{residenceData.checkinTime}}</span>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,71 @@
+@import "../../../styling/shared";
+
+.ch-pink-form-field {
+    &.mat-form-field-apperance-outline {
+        .mat-select-arrow {
+            border: 0;
+        }
+
+        .mat-form-field-subscript-wrapper {
+            margin-top: 0;
+        }
+
+        .mat-form-field-wrapper {
+            line-height: 16px;
+            font-size: 12px;
+        }
+
+        .mat-form-field-outline-start,
+        .mat-form-field-outline-gap,
+        .mat-form-field-outline-end {
+            background-color: $HOT_PINK;
+            color: $DUST;
+        }
+
+        .mat-select-placeholder {
+            color: $LIGHT_DUST;
+        }
+
+        .mat-form-field-outline {
+            color: $LIGHT_DUST;
+        }
+
+        .mat-icon {
+            color: $LIGHT_DUST;
+            fill: $LIGHT_DUST;
+        }
+
+        .mat-form-field-label {
+            color: $DUST;
+        }
+
+        &.mat-form-field-can-float.mat-form-field-should-float {
+            .mat-form-field-label {
+                transform: translateY(-1.25em) scale(0.75);
+                color: $DUST;
+            }
+        }
+
+        .mat-form-field-prefix,
+        .mat-form-field-suffix {
+            top: 0.5em;
+        }
+
+        .mat-form-field-infix {
+            padding: 0.9em 0 0.9em 0;
+            border-top: 0.4em solid transparent;
+        }
+
+        &.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-outline-gap {
+            border-top-color: transparent;
+        }
+
+        .mat-select-panel {
+            background-color: $HOT_PINK;
+        }
+
+        .mat-option.mat-selected:not(.mat-option-disabled) {
+            color: $HOT_PINK !important;
+        }
+    }
+}

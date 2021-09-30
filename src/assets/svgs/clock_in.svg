@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__clock_1_" width="36" height="27.066" data-name="clock (1)" viewBox="0 0 36 27.066">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#0cc}
+        </style>
+    </defs>
+    <path id="prefix__Path_77016" d="M37.461 135.265H31.9a.527.527 0 0 1 0-1.055h5.562a.527.527 0 0 1 0 1.055z" class="prefix__cls-1" data-name="Path 77016" transform="translate(-4.194 -129.24)"/>
+    <path id="prefix__Path_77017" d="M77.039 185.317h2.2a.527.527 0 0 1 0 1.055h-2.2a.527.527 0 0 1 0-1.055z" class="prefix__cls-1" data-name="Path 77017" transform="translate(-49.143 -176.754)"/>
+    <path id="prefix__Path_77018" d="M5.907 223.382H.527a.527.527 0 0 1 0-1.055h5.38a.527.527 0 0 1 0 1.055z" class="prefix__cls-1" data-name="Path 77018" transform="translate(29.566 -211.161)"/>
+    <path id="prefix__Path_77019" d="M31.372 363.316a.527.527 0 0 1 .527-.527h5.562a.527.527 0 1 1 0 1.055H31.9a.527.527 0 0 1-.528-.528z" class="prefix__cls-1" data-name="Path 77019" transform="translate(-4.194 -341.747)"/>
+    <path id="prefix__Path_77020" d="M77.039 311.683h2.2a.527.527 0 0 1 0 1.055h-2.2a.527.527 0 0 1 0-1.055z" class="prefix__cls-1" data-name="Path 77020" transform="translate(-49.143 -294.235)"/>
+    <path id="prefix__Path_77021" d="M0 275.2a.527.527 0 0 1 .527-.527h5.38a.527.527 0 1 1 0 1.055H.527A.527.527 0 0 1 0 275.2z" class="prefix__cls-1" data-name="Path 77021" transform="translate(29.566 -259.827)"/>
+    <path id="prefix__Path_77022" d="M312.556 141.242a.527.527 0 0 1-.527-.527v-.8a.527.527 0 0 1 1.055 0v.8a.527.527 0 0 1-.528.527z" class="prefix__cls-1" data-name="Path 77022" transform="translate(-299.023 -134.049)"/>
+    <path id="prefix__Path_77023" d="M381.246 171.5a.528.528 0 0 1 .746 0l.569.569a.527.527 0 0 1-.746.746l-.569-.569a.528.528 0 0 1 0-.746z" class="prefix__cls-1" data-name="Path 77023" transform="translate(-373.511 -163.761)"/>
+    <path id="prefix__Path_77024" d="M411.031 248.5a.527.527 0 0 1 0 1.055h-.8a.527.527 0 0 1 0-1.055z" class="prefix__cls-1" data-name="Path 77024" transform="translate(-404.366 -235.494)"/>
+    <path id="prefix__Path_77025" d="M381.815 317.717a.527.527 0 0 1 .746.746l-.569.569a.527.527 0 0 1-.746-.746z" class="prefix__cls-1" data-name="Path 77025" transform="translate(-373.511 -299.701)"/>
+    <path id="prefix__Path_77026" d="M313.084 346.7v.8a.527.527 0 0 1-1.055 0v-.8a.527.527 0 0 1 1.055 0z" class="prefix__cls-1" data-name="Path 77026" transform="translate(-299.023 -326.297)"/>
+    <path id="prefix__Path_77027" d="M235.77 317.717l.569.569a.527.527 0 0 1-.746.746l-.569-.569a.527.527 0 1 1 .746-.746z" class="prefix__cls-1" data-name="Path 77027" transform="translate(-217.008 -299.701)"/>
+    <path id="prefix__Path_77028" d="M204.243 248.5a.527.527 0 1 1 0 1.055h-.8a.527.527 0 0 1 0-1.055z" class="prefix__cls-1" data-name="Path 77028" transform="translate(-183.038 -235.494)"/>
+    <path id="prefix__Path_77029" d="M235.026 172.066l.569-.569a.527.527 0 0 1 .746.746l-.569.569a.527.527 0 0 1-.746-.746z" class="prefix__cls-1" data-name="Path 77029" transform="translate(-217.009 -163.761)"/>
+    <path id="prefix__Path_77030" d="M312.029 190.286a.527.527 0 0 1 .527-.527h1.781v-3.915a.527.527 0 1 1 1.055 0v4.443a.527.527 0 0 1-.527.527h-2.308a.527.527 0 0 1-.528-.528z" class="prefix__cls-1" data-name="Path 77030" transform="translate(-301.332 -176.753)"/>
+    <path id="prefix__Path_77031" d="M170.491 116.895a.527.527 0 0 1-.494-.558 10.507 10.507 0 1 1 .1 2.219.527.527 0 0 1 1.043-.157 9.466 9.466 0 1 0-.087-2 .528.528 0 0 1-.558.494z" class="prefix__cls-1" data-name="Path 77031" transform="translate(-166.958 -103.449)"/>
+    <path id="prefix__Path_77032" d="M117.214 63.529a13.528 13.528 0 0 1 5.345 1.1h9.3a.527.527 0 0 1 0 1.055h-7.32a13.518 13.518 0 0 1 2.7 2.292.527.527 0 0 1-.782.708A12.453 12.453 0 1 0 127.7 70.3a.527.527 0 0 1 .886-.572 13.53 13.53 0 0 1-4.048 18.709h7.324a.527.527 0 1 1 0 1.055h-9.3a13.533 13.533 0 1 1-5.352-25.962z" class="prefix__cls-1" data-name="Path 77032" transform="translate(-103.681 -63.529)"/>
+</svg>

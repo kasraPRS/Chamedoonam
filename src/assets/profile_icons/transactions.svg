@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+    <defs>
+        <style>
+            .cls-2{fill:#c6c6c6}
+        </style>
+    </defs>
+    <g id="icon-_Transactions" transform="translate(16186 16437)">
+        <path id="Rectangle_3668" fill="none" d="M0 0H72V72H0z" transform="translate(-16186 -16437)"/>
+        <g id="wallet" transform="translate(-16180 -16431)">
+            <path id="Path_76796" d="M52.5 63H50v-5a10.011 10.011 0 0 0-10-10H2.5A2.5 2.5 0 0 0 0 50.5v40A2.5 2.5 0 0 0 2.5 93H40a10.011 10.011 0 0 0 10-10v-5h2.5a2.5 2.5 0 0 0 2.5-2.5v-10a2.5 2.5 0 0 0-2.5-2.5zM45 83a5.006 5.006 0 0 1-5 5H5V53h35a5.006 5.006 0 0 1 5 5v5h-2.5a7.5 7.5 0 0 0 0 15H45zm5-10h-7.5a2.5 2.5 0 0 1 0-5H50z" class="cls-2" transform="translate(0 -33)"/>
+            <path id="Path_76797" d="M49.985 80h-5v2.625A6.25 6.25 0 0 0 46.235 95h2.5a1.25 1.25 0 0 1 0 2.5h-8.75v5h5v2.5h5v-2.625A6.25 6.25 0 0 0 48.735 90h-2.5a1.25 1.25 0 0 1 0-2.5h8.75v-5h-5z" class="cls-2" transform="translate(-27.485 -55)"/>
+            <path id="Path_76798" d="M146.5 31.373h5a7.509 7.509 0 0 0-7.5-7.5v5a2.5 2.5 0 0 1 2.5 2.5z" class="cls-2" transform="translate(-99 -16.413)"/>
+            <path id="Path_76799" d="M144 0v5a10.011 10.011 0 0 1 10 10h5a15.017 15.017 0 0 0-15-15z" class="cls-2" transform="translate(-99)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.966" height="36.966" viewBox="0 0 36.966 36.966">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none}.prefix__cls-2{fill:#c6c6c6}
+        </style>
+    </defs>
+    <g id="prefix__icon_instagram-white" data-name="icon instagram-white" transform="translate(-1617.001 -37.001)">
+        <g id="prefix__Group_6660" data-name="Group 6660" transform="translate(1617.001 37.001)">
+            <g id="prefix__Group_610" data-name="Group 610">
+                <path id="prefix__Rectangle_1501" d="M0 0H36.966V36.966H0z" class="prefix__cls-1" data-name="Rectangle 1501"/>
+                <g id="prefix__Group_6659" data-name="Group 6659">
+                    <path id="prefix__Rectangle_1503" d="M0 0H36.966V36.966H0z" class="prefix__cls-1" data-name="Rectangle 1503"/>
+                </g>
+            </g>
+        </g>
+        <g id="prefix__instagram" transform="translate(1624 44.001)">
+            <g id="prefix__Group_7391" data-name="Group 7391">
+                <g id="prefix__Group_7390" data-name="Group 7390">
+                    <path id="prefix__Path_76639" d="M15.262 0H6.937A6.938 6.938 0 0 0 0 6.937v8.325A6.938 6.938 0 0 0 6.937 22.2h8.325a6.938 6.938 0 0 0 6.938-6.938V6.937A6.938 6.938 0 0 0 15.262 0zm4.856 15.262a4.861 4.861 0 0 1-4.856 4.856H6.937a4.861 4.861 0 0 1-4.856-4.856V6.937a4.861 4.861 0 0 1 4.856-4.856h8.325a4.861 4.861 0 0 1 4.856 4.856z" class="prefix__cls-2" data-name="Path 76639"/>
+                </g>
+            </g>
+            <g id="prefix__Group_7393" data-name="Group 7393" transform="translate(5.55 5.55)">
+                <g id="prefix__Group_7392" data-name="Group 7392">
+                    <path id="prefix__Path_76640" d="M133.55 128a5.55 5.55 0 1 0 5.55 5.55 5.55 5.55 0 0 0-5.55-5.55zm0 9.018a3.469 3.469 0 1 1 3.469-3.469 3.473 3.473 0 0 1-3.469 3.469z" class="prefix__cls-2" data-name="Path 76640" transform="translate(-128 -128)"/>
+                </g>
+            </g>
+            <g id="prefix__Group_7395" data-name="Group 7395" transform="translate(16.326 4.394)">
+                <g id="prefix__Group_7394" data-name="Group 7394">
+                    <circle id="prefix__Ellipse_180" cx=".74" cy=".74" r=".74" class="prefix__cls-2" data-name="Ellipse 180"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

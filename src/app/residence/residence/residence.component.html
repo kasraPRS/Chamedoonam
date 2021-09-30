@@ -1,0 +1,143 @@
+<div class="wrapper" fxLayou="row" fxLayoutAlign="center center">
+
+    <div class="background-keeper" *ngIf="residenceData">
+
+
+
+
+
+
+
+        <mat-grid-list [cols]="gridColsNumber" rowHeight="300px" gutterSize="3">
+            <mat-grid-tile [colspan]="2" [rowspan]="2">
+                <img src={{residenceData.images[0]}} class="first-img">
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="2" [rowspan]="1" *ngFor="let img of images; let i = index">
+                <img *ngIf="i<2" src={{img}} [ngClass]="'gutter'+i">
+            </mat-grid-tile>
+        </mat-grid-list>
+
+        <div class="gallery-btn-holder">
+            <!-- <button mat-icon-button (click)="openDialog()" class="show-gallery">
+                <mat-icon>menu</mat-icon>
+            </button> -->
+
+            <button mat-raised-button (click)="openDialog()" class="show-gallery" dir="rtl">
+                <mat-icon svgIcon="more-photo"></mat-icon>
+                <span>تصاویر بیشتر</span>
+            </button>
+        </div>
+
+    </div>
+    <!-- <img src={{residenceData.images[0]}}> -->
+</div>
+<div class="wrapper" *ngIf="residenceData" fxLayoutGap="35px" fxLayou="row" fxLayoutAlign="center start">
+    <div class="side-nav" fxFlex="25">
+        <app-sidenav [title]="residenceData.title" [weekendPrice]="residenceData.weekendPrice"
+            [holidayPrice]="residenceData.holidayPrice" [pricePerNight]="residenceData.pricePerNight"
+            [capacity]="residenceData.capacity"></app-sidenav>
+
+    </div>
+
+    <div id="content" fxFlex="65">
+        <div class="accommodation-spec" fxLayout="row" fxLayoutAlign="end center">
+            <div fxFlex="100" fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="60px">
+
+
+                <div id="show" fxLayout="row" fxLayoutAlign="space-between start">
+                    <div fxLayout="column">
+                        <div class="header" fxLayout="row" fxLayoutAlign="space-between end">
+                            <app-rating [rating]="residenceData.scoresCount"></app-rating>
+                            <span class="title">{{residenceData.title}}</span>
+                        </div>
+                        <app-options [residenceData]="residenceData" style="width: 100%;"></app-options>
+                    </div>
+
+                    <div fxFlex="30" fxLayout="row" fxLayoutAlign="end start">
+                        <div id="profile" fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="16px">
+                            <img src="assets/icons/profile.png">
+                            <span>{{residenceData.host}}</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="special-options" fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="16px">
+                    <span class="title-cyan">ویژگیهای اقامتگاه</span>
+                    <div fxLayout="row wrap" fxLayoutAlign="end start" fxLayoutGap="20px">
+
+                        <div fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="16px"
+                            id="img-and-title" *ngFor="let option of residenceData.options">
+                            <img src="{{option.icon}}">
+                            <span>{{option.title}}</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="about-accommodation" fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="16px"
+                    *ngIf="residenceData.descriptions">
+                    <span class="title-cyan">درباره اقامتگاه</span>
+                    <p dir="rtl">{{residenceData.descriptions}}</p>
+                </div>
+
+                <div id="accommodation-rules" *ngIf="residenceData.rules.length" fxLayout="column"
+                    fxLayoutAlign="space-between end" fxLayoutGap="16px">
+                    <span class="title-cyan">قوانین و مقررات اقامتگاه</span>
+                    <mat-list role="list" *ngFor="let item of residenceData.rules">
+
+                        <mat-list-item role="listitem" dir="rtl">
+                            {{item}}
+                            <mat-icon mat-list-icon>fiber_manual_record</mat-icon>
+
+                        </mat-list-item>
+                    </mat-list>
+                </div>
+                <div id="accommodation-statistics" fxLayout="column" fxLayoutAlign="space-between end"
+                    fxLayoutGap="16px">
+                    <app-statistic [infoAccuracyScore]="residenceData.infoAccuracyScore"
+                        [localAccessScore]="residenceData.localAccessScore" [hostingScore]="residenceData.hostingScore"
+                        [cleanLinessScore]="residenceData.cleanLinessScore" style="width:100%;"></app-statistic>
+                </div>
+
+
+                <!-- <div id="gallery">
+                    <div class="gallery-wrapper">
+                        <mat-grid-list [cols]="gridColsNumber" rowHeight="300px" gutterSize="3">
+                            <mat-grid-tile [colspan]="4" [rowspan]="1">
+                                <img src={{residenceData.images[0]}}>
+                            </mat-grid-tile>
+                            <mat-grid-tile [colspan]="2" [rowspan]="1" *ngFor="let img of images; let i = index">
+                                <img *ngIf="i<2" src={{img}}>
+                            </mat-grid-tile>
+                        </mat-grid-list>
+
+                        <button mat-button class="secondary">بیشتر</button>
+                    </div>
+
+                </div> -->
+
+
+                <!-- <div id="gallery" fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="16px">
+                    <img *ngFor="let img of residenceData.images" src="{{img}}">
+                </div> -->
+
+
+                <!-- <app-gallery [residenceData]="residenceData.images"></app-gallery> -->
+
+
+                <!-- <div id="accommodation-review">
+                    <app-review></app-review>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="wrapper" *ngIf="residenceData">
+    <div id="content-fluid">
+        <!-- <app-map [klass]="'agm-map-custom-height'" [locationInfo]="residenceData.locationInfo"></app-map> -->
+        <app-map-image [locationInfo]="residenceData.locationInfo"></app-map-image>
+    </div>
+</div>

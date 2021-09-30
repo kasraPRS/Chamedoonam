@@ -1,0 +1,108 @@
+@import "../../../styling/shared";
+
+#container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    #content-container {
+        // height: calc(100vh - 64px);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        overflow: auto;
+
+        // min-height: 100%;
+        // width: 100%;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
+        // overflow: auto;
+        // justify-content: center;
+
+        .animation-container {
+            flex-grow: 1;
+            background-color: $WHITE;
+        }
+
+        app-footer {
+            margin-top: 95px;
+            z-index: 1;
+        }
+    }
+}
+
+.mat-toolbar.mat-primary {
+    -webkit-transition: 700ms;
+    -ms-transition: 700ms;
+    transition: 700ms;
+    -webkit-animation: sk-bounce 2s infinite ease-in-out;
+    animation: sk-bounce 2s infinite ease-in-out;
+}
+.fixed {
+    position: absolute;
+    // background-color: transparent !important;
+    background-color: $NAVY_DARK_BLUE;
+    top: 0;
+    z-index: 5;
+    align-content: center;
+    color: #fff;
+    span {
+        font-family: "IRANsanceBold";
+        color: $WHITE;
+    }
+}
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 5;
+}
+img {
+    height: 120px;
+}
+
+.divFundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.mat-toolbar.mat-primary {
+    background: $NAVY_DARK_BLUE;
+    color: #fff;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+mat-toolbar-row {
+    padding: 18px 140px;
+    position: relative;
+    z-index: 1;
+
+    span {
+        font-size: 18px;
+        color: $WHITE;
+    }
+
+    .logo {
+        color: $CYAN;
+    }
+    .nav-icons {
+        height: 100%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $CYAN;
+    }
+}
+
+.nav-item {
+    width: 50%;
+}

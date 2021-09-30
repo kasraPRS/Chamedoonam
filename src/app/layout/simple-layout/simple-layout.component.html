@@ -1,0 +1,74 @@
+<div id="container" fxLayout="column" fxLayoutGap="20px">
+    <app-header></app-header>
+
+    <div #appContainer id="content-container">
+        <div class="wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+
+            <mat-card>
+                <div fxLayout="row" fxFlex="" fxLayout.xs="column" fxLayoutAlign="space-between center"
+                    fxLayoutGap.xs="0" fxLayoutAlign="center">
+
+                    <div fxLayout="column" fxLayoutAlign="center stretch" fxLayoutGap="20px">
+
+                        <div fxLayout="row" fxLayoutAlign="space-between end">
+                            <button class="close-button" mat-button (click)="onClose()">
+                                <mat-icon>close</mat-icon>
+                            </button>
+
+                            <h1>
+                                <b>
+                                    {{title}}
+                                </b>
+                            </h1>
+                        </div>
+                        <div class="gap"></div>
+                        <div class="description" fxLayout="column" fxLayoutAlign="center end" *ngIf="description">
+                            <p>
+                                <b>{{description}}</b>
+                            </p>
+                            <p *ngIf="phoneNumber">
+                                <b>
+                                    {{phoneNumber}}
+                                </b>
+                            </p>
+                        </div>
+
+                        <div class="simple-layout-content">
+                            <router-outlet></router-outlet>
+                        </div>
+
+
+
+                        <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="20px" dir="rtl">
+                            <mat-list dense>
+                                <mat-list-item>
+                                    <mat-icon>close</mat-icon>
+                                    رمز خود را در اختیار سایرین قرار ندهید.
+                                </mat-list-item>
+                                <mat-list-item>
+                                    <mat-icon>close</mat-icon>از رمز عبوری استفاده کنید که حدس زدن آن برای دیگران راحت
+                                    نباشد.
+                                </mat-list-item>
+                                <mat-list-item>
+                                    <mat-icon>close</mat-icon>پس از خرید خود در فضاهای اشتراکی مثل کافی نت ها حتما از
+                                    حساب خود
+                                    خارج
+                                    شوید.
+                                </mat-list-item>
+                            </mat-list>
+                        </div>
+
+                    </div>
+
+                </div>
+            </mat-card>
+
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
+<!-- <router-outlet></router-outlet> -->

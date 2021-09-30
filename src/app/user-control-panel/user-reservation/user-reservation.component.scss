@@ -1,0 +1,29 @@
+@import "../../styling/shared";
+* {
+    font-family: "IRANsanceBold";
+    color: $DUST;
+}
+.image-holder {
+    width: 180px;
+    height: 140px;
+    img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.holder {
+    background-color: $CYAN_LIGHT;
+}
+
+.blue-berry {
+    font-family: "IRANsanceBold";
+    color: $BLUE_BERRY;
+}
+.data {
+    div {
+        width: 100%;
+    }
+}

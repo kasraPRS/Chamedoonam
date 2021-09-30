@@ -1,0 +1,15 @@
+#gallery {
+    width: 100%;
+    .gallery-wrapper {
+        height: 60vh;
+        overflow: hidden;
+        transition: height 2s;
+    }
+    .gallery-wrapper:hover {
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+}

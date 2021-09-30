@@ -1,0 +1,9 @@
+<div id="container" appCaptureClickEvent>
+    <app-header></app-header>
+    <app-filter-header *ngIf="showMenu" style="margin-top:64px"></app-filter-header>
+    <div #appContainer appCaptureScrollEvent id="content-container">
+        <router-outlet #routerOutlet="outlet" (activate)="onActivate()" class="outlet-content">
+        </router-outlet>
+        <app-footer></app-footer>
+    </div>
+</div>

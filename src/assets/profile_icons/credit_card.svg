@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.465" height="54.267" viewBox="0 0 59.465 54.267">
+    <defs>
+        <style>
+            .cls-2{stroke:#c6c6c6;fill:none;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="credit-card" transform="translate(1 1)">
+        <g id="Group_7971">
+            <g id="Group_7970">
+                <path id="Path_76771" fill="#c6c6c6" stroke="#c6c6c6" stroke-width="2px" d="M51.479 85.333H5.986C2.687 85.333 0 89 0 93.5v35.933c0 4.5 2.687 8.167 5.986 8.167h45.493c3.3 0 5.986-3.665 5.986-8.167V93.5c0-4.5-2.686-8.167-5.986-8.167zm3.592 44.1c0 2.7-1.611 4.9-3.592 4.9H5.986c-1.98 0-3.592-2.2-3.592-4.9V93.5c0-2.7 1.611-4.9 3.592-4.9h45.493c1.98 0 3.592 2.2 3.592 4.9v35.933z" transform="translate(0 -85.333)"/>
+            </g>
+        </g>
+        <path id="Line_340" d="M0 0L0 46.745" class="cls-2" transform="translate(29.109 3.137)"/>
+        <path id="Line_341" d="M24.755 0L0 0" class="cls-2" transform="translate(29.233 27.763)"/>
+    </g>
+</svg>

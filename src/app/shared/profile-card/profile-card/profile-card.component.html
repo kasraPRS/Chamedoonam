@@ -1,0 +1,47 @@
+<mat-card *ngIf="profile">
+    <div fxLayoutAlign="space-between center">
+        <div fxLayout="column" fxLayoutGap="10px" style="width: 100%;">
+            <span>
+                <h4><b>
+                        {{profile.firstName + ' ' + profile.lastName}}
+                    </b></h4>
+            </span>
+            <span fxLayout="row" fxLayoutAlign="space-between center" style="width: 100%;">
+                <h5><b>موجودی کیف پول:</b></h5>
+                <span>{{profile.creditAmount | friendlyPrice}}</span>
+            </span>
+            <!-- <span dir="rtl">
+                <button class="primary" mat-raised-button>
+                    افزایش اعتبار <mat-icon svgIcon="user_plus"></mat-icon>
+                </button>
+            </span> -->
+        </div>
+        <!-- <div fxLayout="column" fxLayoutAlign="center" fxLayoutGap="10px">
+            <div class="avatar" mat-card-avatar></div>
+            <span dir="rtl">
+                <button mat-button>
+                    افزایش اعتبار <mat-icon svgIcon="user_plus" [ngStyle]="{'color':'white'}"></mat-icon>
+                </button>
+            </span>
+        </div> -->
+    </div>
+    <hr>
+    <mat-card-content>
+        <!-- <p>{{item['title']}}</p> -->
+        <mat-list fxLayoutGap="20px">
+            <mat-list-item *ngFor="let item of profileItems" dir="rtl">
+                <a routerLink="{{item.url}}" class="list--item">
+                    <h3 matLine> {{item.title}} </h3>
+                    <mat-icon svgIcon="{{item.icon}}"></mat-icon>
+                </a>
+
+            </mat-list-item>
+            <mat-list-item>
+                <span class="list--item logout" (click)="logout()">
+                    <h3 matLine> خروج از اکانت کاربری </h3>
+                    <mat-icon svgIcon="user_logOut"></mat-icon>
+                </span>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

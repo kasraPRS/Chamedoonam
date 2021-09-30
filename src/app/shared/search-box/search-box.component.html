@@ -1,0 +1,20 @@
+<div class={{klass}}>
+
+    <mat-form-field appearance="outline" [formGroup]="formData">
+
+        <mat-label>مقصدتان کجاست؟</mat-label>
+
+        <input matInput #searchFiel [matAutocomplete]="auto">
+        <mat-icon matSuffix>location_on</mat-icon>
+        <mat-progress-bar mode="indeterminate" *ngIf="showLoader"></mat-progress-bar>
+
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="onKeyup($event.option.value)">
+            <mat-option *ngFor="let option of options" [value]="option.title">
+                <img *ngIf="option.discriminator === 3" src="assets/autocomplite/city.svg">
+                <img *ngIf="option.discriminator === 6" src="assets/autocomplite/state.svg">
+                {{option.title}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+
+</div>

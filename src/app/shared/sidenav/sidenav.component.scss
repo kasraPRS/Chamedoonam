@@ -1,0 +1,70 @@
+@import "../../styling/shared";
+mat-card {
+    top: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: sticky;
+    border: 1px solid $DUST;
+    mat-card-header {
+        margin-bottom: 16px;
+    }
+}
+.example-card {
+    max-width: 400px;
+}
+
+.title {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid $GRAY_600;
+    border-bottom: 1px solid $GRAY_600;
+    #people {
+        color: $HOT_PINK;
+    }
+    #night {
+        color: $CYAN;
+    }
+}
+.calculator {
+    width: 100%;
+    .calculator-days {
+        width: 100%;
+        #dayCount {
+            color: $CYAN;
+        }
+        #peopleCount {
+            color: $HOT_PINK;
+        }
+    }
+}
+
+.final-count {
+    width: 100%;
+}
+
+mat-icon {
+    font-size: 14px !important;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    color: $WHITE;
+    background-color: $CYAN;
+    width: 100%;
+}
+.calc {
+    font-size: 14px;
+}
+
+@include mid_desktop {
+    .calc {
+        font-size: 12px;
+    }
+}
+
+form {
+    width: 100%;
+}

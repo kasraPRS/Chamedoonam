@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <!-- <button mat-icon-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button> -->
+    <button mat-raised-button mat-dialog-close dir="rtl" class="close-btn">
+        <span>بستن</span>
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+<div class="gallery-wrapper">
+
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <li ngxSlickItem *ngFor="let slide of items" class="slide">
+            <!-- <div> -->
+            <div class="hooker"
+                [ngStyle]="{'background':'url( '+slide+' ) no-repeat 0px 0px','background-size': 'cover', 'background-position':'center center'}">
+            </div>
+            <!-- </div> -->
+
+        </li>
+    </ngx-slick-carousel>
+</div>
+
+<!-- <button (click)="addSlide()">Add</button>
+<button (click)="removeSlide()">Remove</button>
+<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+<button (click)="slickModal.unslick()">unslick</button> -->

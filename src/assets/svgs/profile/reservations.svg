@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="prefix__icon-Reservations" transform="translate(23921 23836)">
+        <g id="prefix__Group_7961" data-name="Group 7961" transform="translate(-23921 -23836)">
+            <path id="prefix__Rectangle_3654" fill="none" d="M0 0H24V24H0z" data-name="Rectangle 3654"/>
+        </g>
+        <g id="prefix__bell" transform="translate(-23919 -23912)">
+            <g id="prefix__Group_8000" data-name="Group 8000" transform="translate(0 81)">
+                <path id="prefix__Path_76779" fill="#0cc" stroke="#0cc" stroke-width="0.5px" d="M10.586 93.5v-1.171H18.4v-.586a8.4 8.4 0 0 0-7.813-8.378v-1.193h1.172V81H8.243v1.172h1.171v1.192A8.4 8.4 0 0 0 1.6 91.743v.586h7.814V93.5H0v1.172h20V93.5zM2.8 91.157a7.227 7.227 0 0 1 14.407 0z" data-name="Path 76779" transform="translate(0 -81)"/>
+            </g>
+        </g>
+    </g>
+</svg>

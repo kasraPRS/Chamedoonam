@@ -1,0 +1,27 @@
+@import "../../../styling/shared";
+.example-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  padding: 18px 140px;
+  background-color: transparent !important;
+  position: absolute;
+  z-index: 1;
+  span {
+    font-size: 18px;
+    color: $WHITE;
+  }
+
+  .logo {
+    color: $CYAN;
+  }
+
+  .left-side-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.navbar-inverse {
+  background-color: $CYAN;
+}

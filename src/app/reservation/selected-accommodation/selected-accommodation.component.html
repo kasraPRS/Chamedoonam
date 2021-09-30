@@ -1,0 +1,247 @@
+<div class="wrapper" *ngIf="residenceData" fxLayoutGap="35px">
+
+    <div id="content" fxFlex="35">
+
+        <div class="accommodation-spec" fxLayout="row" fxLayoutAlign="end center">
+            <div id="show" fxLayout="row">
+                <div fxLayout="column" id="show-options" fxLayoutGap="16px">
+                    <mat-card>
+                        <mat-card-header>
+                            <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
+                                <app-rating [rating]="residenceData.scoresCount"></app-rating>
+                                <span class="titr">{{residenceData.title}}</span>
+                            </div>
+
+                        </mat-card-header>
+                        <div class="options">
+                            <reservation-option [residenceData]="residenceData"></reservation-option>
+                        </div>
+
+                        <div id="checkin-checkout" fxLayout="row" fxLayoutGap="47px" dir="rtl"
+                            fxLayoutAlign="space-around center">
+                            <span id="date">تاریخ ورود</span>
+                            <span id="date">{{factor.startDate}}</span>
+                            <span id="date">تاریخ خروج</span>
+                            <span id="date">{{factor.endDate}}</span>
+                        </div>
+                    </mat-card>
+
+                    <!-- <div id="special-offer" dir="rtl">
+                        <mat-checkbox class="example-margin" [(ngModel)]="specialOffer"></mat-checkbox>
+                        <span>پیشنهاد ویژه</span>
+                    </div> -->
+
+                    <mat-card>
+
+                        <div id="bills" fxFlexAlign="row">
+
+                            <div class="calculator-days"
+                                *ngIf="(factor.daysFormControlName - factor.weekendDaysFormControlName - factor.holdidaysFormControlName) > 0">
+                                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+                                    <span id="mc-title">روزهای عادی</span>
+
+                                    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+                                        <span id="price" dir="rtl">{{factor.normalDaysPrice| friendlyPrice}}</span>
+                                        <span>
+                                            &nbsp;
+                                        </span>
+
+                                        <span
+                                            id="dayCount">({{factor.daysFormControlName - factor.weekendDaysFormControlName - factor.holdidaysFormControlName}}
+                                            شب)</span>
+                                        <span>
+                                            &nbsp;
+                                        </span>
+                                        <span id="peopleCount">({{addOrder.value.GuestsCount + 1}} نفر)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="calculator-days" *ngIf="factor.weekendDaysFormControlName">
+                                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+                                    <span id="mc-title">روزهای آخر هفته</span>
+
+
+                                    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+                                        <span id="price" dir="rtl">{{factor.weekendDaysPrice| friendlyPrice}}</span>
+                                        <span>
+                                            &nbsp;
+                                        </span>
+
+                                        <span id="dayCount">({{factor.weekendDaysFormControlName}} شب)</span>
+                                        <span>
+                                            &nbsp;
+                                        </span>
+                                        <span id="peopleCount">({{addOrder.value.GuestsCount + 1}} نفر)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="calculator-days" *ngIf="factor.holdidaysFormControlName">
+                                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+                                    <span id="mc-title">روزهای تعطیل</span>
+
+
+                                    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="8px">
+
+                                        <span id="price" dir="rtl">{{factor.holidaysDaysPrice| friendlyPrice}}</span>
+                                        <span>
+                                            &nbsp;
+                                        </span>
+
+                                        <span id="dayCount">({{factor.holdidaysFormControlName}} شب)</span>
+                                        <span>
+                                            &nbsp;
+                                        </span>
+                                        <span id="peopleCount">({{addOrder.value.GuestsCount + 1}} نفر)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="final-count">
+                            <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+                                <span>جمع کل</span>
+                                <div class="calc" fxLayout="row-reverse" fxLayoutAlign="space-between end"
+                                    fxLayoutGap="8px">
+                                    <span>{{ factor.normalDaysPrice +
+                                        factor.weekendDaysPrice +
+                                        factor.holidaysDaysPrice | friendlyPrice}}</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </mat-card>
+
+                    <mat-card style="padding:16px !important;">
+                        <div id="active-discount" dir="rtl">
+                            <mat-checkbox class="example-margin" [(ngModel)]="active_discount">کد تخفیف</mat-checkbox>
+                        </div>
+
+                        <div id="discount" *ngIf="active_discount">
+                            <form [formGroup]="formCoupan" (ngSubmit)="coupan()">
+                                <div fxLayout="row" fxLayoutGap="16px" fxLayoutAlign="space-between center">
+                                    <!-- <div fxFlex="20"> -->
+                                    <button mat-button>ثبت</button>
+                                    <!-- </div> -->
+
+                                    <!-- <div fxFlex="80"> -->
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>اگر کد تخفیف دارید اینجا وارد کنید</mat-label>
+                                        <input matInput placeholder="کد تخفیف" formControlName="CouponCode">
+
+                                    </mat-form-field>
+                                    <!-- </div> -->
+
+
+
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="final-count" *ngIf="invoice">
+                            <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="space-between center">
+                                <span>مبلغ قابل پرداخت</span>
+                                <div class="calc" fxLayout="column" fxLayoutAlign="space-between end" fxLayoutGap="8px">
+
+                                    <span *ngIf="invoice"><span>با احتساب تخفیف</span>
+                                        {{ factor.normalDaysPrice + factor.weekendDaysPrice + factor.holidaysDaysPrice - invoice.discountAmount | friendlyPrice}}</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </mat-card>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div fxFlex="65">
+        <div class="background-keeper" *ngIf="residenceData" fxLayoutGap="35px">
+            <img src={{residenceData.images[0]}}>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper last-wrapper" fxLayoutGap="35px">
+
+    <div *ngIf="residenceData" style="width: 100%;">
+        <!-- <app-map [klass]="'agm-map-auto-height'" [locationInfo]="residenceData.locationInfo"></app-map> -->
+        <app-map-short [klass]="'agm-map-auto-height'" [locationInfo]="residenceData.locationInfo"></app-map-short>
+        <!-- <app-map-image [klass]="'agm-map-auto-height'" [locationInfo]="residenceData.locationInfo"></app-map-image> -->
+
+    </div>
+
+    <div id="form" fxFlex="65">
+
+
+
+        <!-- <div fxLayout="row"> -->
+
+        <form dir="rtl" [formGroup]="addOrder" (ngSubmit)="onSubmit()" fxLayout="column"
+            fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutGap="20px" class="multi-row" fxLayoutAlign="space-between center">
+                <mat-form-field appearance="outline">
+                    <mat-label>نام </mat-label>
+                    <input matInput placeholder="نام" formControlName="firstName">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>نام خانوادگی</mat-label>
+                    <input matInput placeholder="نام خانوادگی" formControlName="lastName">
+                </mat-form-field>
+
+
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px" class="multi-row" fxLayoutAlign="space-between center">
+                <mat-form-field appearance="outline">
+                    <mat-label>کد ملی</mat-label>
+                    <input matInput placeholder="کد ملی" formControlName="nationalId">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>تلفن همراه</mat-label>
+                    <input matInput placeholder="تلفن همراه" formControlName="phone">
+                </mat-form-field>
+            </div>
+
+
+            <div fxLayout="row" class="single-row">
+                <mat-form-field appearance="outline">
+                    <mat-label>ایمیل</mat-label>
+                    <input matInput placeholder="ایمیل" type="email" formControlName="email">
+                </mat-form-field>
+            </div>
+
+
+            <div fxLayout="row" class="single-row">
+                <mat-form-field appearance="outline">
+                    <mat-label>آدرس</mat-label>
+                    <textarea matInput placeholder="آدرس" formControlName="address"></textarea>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row" fxLayoutGap="8px" dir="rtl" fxLayoutAlign="start center">
+                <mat-checkbox color="primary" [(ngModel)]="checked" formControlName="agreement"></mat-checkbox>
+                <p>اینجانب با <a routerLink="/rules">قوانین و مقررات</a> چمدونم موافق هستم</p>
+            </div>
+            <button class="submit-btn" mat-button style="width: 25%;" [disabled]="!checked">ثبت</button>
+        </form>
+
+
+        <!-- </div> -->
+
+
+    </div>
+
+</div>

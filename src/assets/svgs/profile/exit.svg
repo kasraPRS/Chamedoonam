@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__icon-_exit" width="24" height="24" data-name="icon- exit" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-3{fill:#f69;stroke:#f69;stroke-width:.5px}
+        </style>
+    </defs>
+    <g id="prefix__Group_7961" data-name="Group 7961">
+        <path id="prefix__Rectangle_3654" fill="none" d="M0 0H24V24H0z" data-name="Rectangle 3654"/>
+        <g id="prefix__Group_7958" data-name="Group 7958" transform="translate(11.904 11.904)">
+            <g id="prefix__Group_7957" data-name="Group 7957">
+                <path id="prefix__Path_76765" fill="#339" d="M356.2 372.2a.5.5 0 0 0-.027-.087.475.475 0 0 0-.043-.08.441.441 0 0 0-.058-.071.5.5 0 0 0-.071-.058.494.494 0 0 0-.08-.043.465.465 0 0 0-.087-.027.463.463 0 0 0-.269.027.491.491 0 0 0-.08.043.528.528 0 0 0-.071.058.441.441 0 0 0-.058.071.471.471 0 0 0-.043.08.5.5 0 0 0-.026.087.472.472 0 0 0-.009.091.463.463 0 0 0 .009.091.471.471 0 0 0 .026.087.457.457 0 0 0 .043.08.443.443 0 0 0 .058.071.488.488 0 0 0 .071.058.5.5 0 0 0 .08.043.463.463 0 0 0 .356 0 .489.489 0 0 0 .08-.043.466.466 0 0 0 .2-.478z" data-name="Path 76765" transform="translate(-355.282 -371.825)"/>
+            </g>
+        </g>
+    </g>
+    <g id="prefix__logout" transform="translate(3 2)">
+        <g id="prefix__Group_7966" data-name="Group 7966">
+            <g id="prefix__Group_7965" data-name="Group 7965">
+                <path id="prefix__Path_76769" d="M10.365 19.853H2.591a.864.864 0 0 1-.864-.864V3.441a.864.864 0 0 1 .864-.864h7.774a.864.864 0 0 0 0-1.728H2.591A2.594 2.594 0 0 0 0 3.441v15.548a2.594 2.594 0 0 0 2.591 2.591h7.774a.864.864 0 1 0 0-1.727z" class="prefix__cls-3" data-name="Path 76769" transform="translate(0 -.85)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_7968" data-name="Group 7968" transform="translate(4.31 4.319)">
+            <g id="prefix__Group_7967" data-name="Group 7967">
+                <path id="prefix__Path_76770" d="M183.732 112.6l-5.252-5.183a.864.864 0 1 0-1.213 1.23l3.753 3.7h-10.056a.864.864 0 0 0 0 1.728h10.056l-3.753 3.7a.864.864 0 1 0 1.213 1.23l5.252-5.183a.863.863 0 0 0 0-1.23z" class="prefix__cls-3" data-name="Path 76770" transform="translate(-170.1 -107.165)"/>
+            </g>
+        </g>
+    </g>
+</svg>

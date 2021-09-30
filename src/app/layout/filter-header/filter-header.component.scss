@@ -1,0 +1,115 @@
+@import "../../styling/shared";
+.filter {
+    background: $NAVY_DARK_BLUE;
+    height: auto;
+    padding: 10px;
+    .logo {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .location-search {
+        width: 100%;
+        .location {
+            width: 100%;
+
+            button {
+                width: 100%;
+                height: 50px;
+            }
+        }
+        .location-search-options {
+            width: 100%;
+            button {
+                width: 100%;
+            }
+            button > :last-child {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .date-options {
+        width: 100%;
+
+        .date {
+            width: 100%;
+            button {
+                width: 100%;
+                height: 50px;
+            }
+        }
+        .date-serach-options {
+            width: 100%;
+            button {
+                width: 100%;
+            }
+            button > :last-child {
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .counter {
+        width: 100%;
+
+        .counter-dropdown {
+            width: 100%;
+            button {
+                width: 100%;
+                height: 50px;
+            }
+        }
+    }
+
+    .serach-button {
+        width: 100%;
+        button {
+            background-color: $CYAN;
+            width: 100%;
+            height: 50px;
+            mat-icon {
+                color: $WHITE;
+            }
+        }
+    }
+}
+
+.mat-stroked-button:not(.mat-button-disabled) {
+    border-color: $WHITE !important;
+}
+.mat-button.mat-basic,
+.mat-icon-button.mat-basic,
+.mat-stroked-button.mat-basic {
+    color: $WHITE !important;
+}
+.mat-button.mat-basic,
+.mat-icon-button.mat-basic,
+.mat-stroked-button.mat-basic {
+    color: $WHITE;
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+#priceLimit {
+    .slider-wrapper {
+        width: 100%;
+        overflow: hidden;
+        mat-slider {
+            width: 100%;
+        }
+    }
+    .chip-wrapper {
+        width: 100%;
+        .mat-chip-list-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

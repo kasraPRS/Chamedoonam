@@ -1,0 +1,44 @@
+<mat-card class="box-sizing" dir="rtl" fxLayout="column" fxLayoutGap="42px">
+
+
+    <mat-card-header fxLayoutAlign="start center">
+        <h2 class="titr">{{title}}</h2>
+    </mat-card-header>
+
+
+    <mat-card-content>
+
+        <form [formGroup]="formData">
+
+            <app-search-box [formData]="formData" [ctrlName]="'locationId'" [isProvince]="'isProvince'">
+            </app-search-box>
+
+            <app-date [formData]="formData" [checkInDate]="'checkInDate'" [checkOutDate]="'checkOutDate'"></app-date>
+
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <span>تعداد مهمانان </span>&nbsp; <span *ngIf="counter"> : {{counter}}</span>
+                        </mat-panel-title>
+
+                    </mat-expansion-panel-header>
+                    <div fxLayout="column" fxLayoutGap="15px">
+                        <app-counter [formData]="formData" [ctrlName]="'passengerCount'" [title]="'نفرات'">
+                        </app-counter>
+                    </div>
+
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <button mat-flat-button (click)="onSubmit()" [disabled]="submitDisable">
+                <mat-icon>search</mat-icon>
+            </button>
+        </form>
+        <!-- datepicker -->
+
+        <!-- </form> -->
+
+    </mat-card-content>
+
+</mat-card>

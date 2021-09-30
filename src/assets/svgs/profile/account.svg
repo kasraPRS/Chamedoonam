@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__icon-_Account" width="24" height="24" data-name="icon- Account" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#0cc;stroke:#0cc;stroke-width:.5px}
+        </style>
+    </defs>
+    <g id="prefix__Group_7961" data-name="Group 7961">
+        <path id="prefix__Rectangle_3654" fill="none" d="M0 0H24V24H0z" data-name="Rectangle 3654"/>
+        <g id="prefix__edit" transform="translate(1.958 2.381)">
+            <path id="prefix__Path_76766" d="M18.178 49.561a.49.49 0 0 0-.491.491v4.355a1.473 1.473 0 0 1-1.472 1.472H2.453a1.473 1.473 0 0 1-1.472-1.472V41.625a1.473 1.473 0 0 1 1.472-1.472h4.355a.491.491 0 0 0 0-.981H2.453A2.455 2.455 0 0 0 0 41.625v12.783a2.455 2.455 0 0 0 2.453 2.452h13.763a2.455 2.455 0 0 0 2.453-2.453v-4.355a.49.49 0 0 0-.491-.491zm0 0" class="prefix__cls-2" data-name="Path 76766" transform="translate(0 -37.263)"/>
+            <path id="prefix__Path_76767" d="M121.358.907a2.207 2.207 0 0 0-3.122 0l-8.751 8.751a.49.49 0 0 0-.126.216l-1.151 4.155a.49.49 0 0 0 .6.6l4.155-1.151a.49.49 0 0 0 .216-.126l8.754-8.752a2.21 2.21 0 0 0 0-3.122zm-10.8 9.07l7.162-7.162 2.31 2.31-7.162 7.162zm-.461.926l1.845 1.846-2.553.707zm11.143-6.992l-.52.52-2.31-2.31.52-.52a1.226 1.226 0 0 1 1.734 0l.576.576a1.228 1.228 0 0 1 0 1.734zm0 0" class="prefix__cls-2" data-name="Path 76767" transform="translate(-102.883 -.261)"/>
+        </g>
+    </g>
+</svg>

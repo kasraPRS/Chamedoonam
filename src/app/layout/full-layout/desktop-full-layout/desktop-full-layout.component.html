@@ -1,0 +1,108 @@
+<!-- <div id="container"> -->
+<!-- <app-header></app-header> -->
+<!-- <app-filter-header *ngIf="showMenu"></app-filter-header> -->
+<!-- <div #appContainer appCaptureScrollEvent id="content-container"> -->
+
+
+
+<div style="height: 100%;">
+    <mat-sidenav-container id="container">
+        <mat-sidenav-content #content cdkScrollable fxLayout="column">
+            <!-- Add Content Here -->
+            <div class="divFundo" fxLayout="column" fxFlexFill>
+                <app-filter-header *ngIf="showMenu" style="margin-top:64px"></app-filter-header>
+                <div #appContainer appCaptureScrollEvent id="content-container">
+                    <router-outlet class="outlet-content" (activate)="onActivate()"></router-outlet>
+
+                    <div class="footer">
+                        <app-footer></app-footer>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <mat-toolbar color="primary" class="fixed" #toolBara>
+                <!-- <mat-toolbar-row>TesteNav - It is Sticking</mat-toolbar-row> -->
+
+
+
+                <mat-toolbar-row dir="rtl" fxLayoutAlign="space-between start">
+
+                    <div fxLayout="row" fxLayoutGap="40px">
+                        <div *ngFor="let nav of navItem[0]">
+                            <a href="{{nav.url}}"><span class="{{nav.class}}"><b>{{nav.title}}</b></span></a>
+                        </div>
+
+                        <a href="http://chamedoonam.com/news/" target="_black">
+                            <span>مجله</span>
+                        </a>
+
+                    </div>
+
+                    <!-- <div class="left-side-items">
+                            <a [routerLink]="'/auth'" *ngIf="!login"><span>ورود</span></a>
+                    
+                            <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="login && profile">
+                                <span>{{profile.firstName + ' ' +  profile.lastName}}</span>
+                            </button>
+                    
+                            <mat-menu #menu="matMenu">
+                                <profile-card></profile-card>
+                            </mat-menu>
+                    
+                        </div> -->
+
+
+                    <div fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="end center" class="nav-item">
+                        <a [routerLink]="'/auth'" *ngIf="!login"><span>ورود</span></a>
+                        <div *ngIf="login && profile">
+                            <button mat-icon-button [matMenuTriggerFor]="menu" style="width: 100%;">
+                                <span>{{profile.firstName + ' ' +  profile.lastName}}</span>
+                                <mat-icon>keyboard_arrow_down</mat-icon>
+
+                            </button>
+
+                            <mat-menu #menu="matMenu">
+                                <profile-card [profile]="profile"></profile-card>
+                            </mat-menu>
+                        </div>
+
+                        <a class="left-side-items" fxLayout="row" fxLayoutAlign="space-between center"
+                            (click)="scroll('.footer')">
+                            <img class="nav-icons" src="assets/svgs/icon_download_app.svg"><span>دانلود
+                                اپ</span></a>
+                        <div *ngFor="let nav of navItem[1]">
+
+
+
+
+                            <a class="left-side-items" fxLayout="row" fxLayoutAlign="space-between center"
+                                routerLink="{{nav.url}}"><img class="nav-icons"
+                                    src="{{nav.icon}}"><span>{{nav.title}}</span></a>
+                        </div>
+                    </div>
+
+                </mat-toolbar-row>
+            </mat-toolbar>
+            <!-- <app-header color="primary" class="fixed" #toolBara></app-header> -->
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+
+
+
+
+
+
+
+
+<!-- </div> -->
+
+
+<!-- <app-navigation></app-navigation>
+<app-header></app-header>
+<app-filter-header *ngIf="showMenu"></app-filter-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer> -->

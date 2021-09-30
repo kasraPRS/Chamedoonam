@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="31" height="31.517" viewBox="0 0 31 31.517">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#0cc}
+        </style>
+    </defs>
+    <g id="prefix__door_1_" data-name="door (1)" transform="translate(-2 -1)">
+        <path id="prefix__Path_76968" d="M20.517 16.233h11.366a.517.517 0 0 0 .517-.517v-6.2A.517.517 0 0 0 31.883 9H20.517a.517.517 0 0 0-.517.517v6.2a.517.517 0 0 0 .517.516zm.517-6.2h10.333V15.2H21.033z" class="prefix__cls-1" data-name="Path 76968" transform="translate(-8.7 -3.867)"/>
+        <path id="prefix__Path_76969" d="M19.55 34.1A1.55 1.55 0 1 0 18 32.55a1.55 1.55 0 0 0 1.55 1.55zm0-2.067a.517.517 0 1 1-.517.517.517.517 0 0 1 .517-.517z" class="prefix__cls-1" data-name="Path 76969" transform="translate(-7.733 -14.5)"/>
+        <path id="prefix__Path_76970" d="M30.933 31.483V28.9a.517.517 0 0 0-.517-.517H28.35V1.517A.517.517 0 0 0 27.833 1H7.167a.517.517 0 0 0-.517.517v26.866H4.583a.517.517 0 0 0-.517.517v2.583H2v1.033h31v-1.033zM7.683 2.033h19.634v26.35H26.8V3.067a.517.517 0 0 0-.517-.517H8.717a.517.517 0 0 0-.517.517v25.316h-.517zm18.083 1.55v24.8H9.233v-24.8zm4.133 27.9H5.1v-2.066h24.8z" class="prefix__cls-1" data-name="Path 76970"/>
+    </g>
+</svg>

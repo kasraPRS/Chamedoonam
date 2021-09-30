@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__icon-_Counter" width="24" height="24" data-name="icon- Counter" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-3{fill:none;stroke:#0cc;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="prefix__Group_7980" data-name="Group 7980">
+        <g id="prefix__Group_7961" data-name="Group 7961">
+            <path id="prefix__Rectangle_3654" fill="none" d="M0 0H24V24H0z" data-name="Rectangle 3654"/>
+        </g>
+    </g>
+    <g id="prefix__credit-card" transform="translate(2.102 5.401)">
+        <g id="prefix__Group_7971" data-name="Group 7971">
+            <g id="prefix__Group_7970" data-name="Group 7970">
+                <path id="prefix__Path_76771" fill="#0cc" stroke="#0cc" stroke-width="0.5px" d="M17.737 85.333H2.062A2.065 2.065 0 0 0 0 87.4v9.07a2.065 2.065 0 0 0 2.062 2.062h15.675A2.065 2.065 0 0 0 19.8 96.47V87.4a2.065 2.065 0 0 0-2.063-2.067zm1.238 11.137a1.239 1.239 0 0 1-1.237 1.237H2.062A1.239 1.239 0 0 1 .825 96.47V87.4a1.239 1.239 0 0 1 1.237-1.237h15.675a1.239 1.239 0 0 1 1.238 1.237v9.07z" data-name="Path 76771" transform="translate(0 -85.333)"/>
+            </g>
+        </g>
+        <path id="prefix__Line_340" d="M0 0L0 11.548" class="prefix__cls-3" data-name="Line 340" transform="translate(12.786 1.237)"/>
+        <path id="prefix__Line_341" d="M5.774 0L0 0" class="prefix__cls-3" data-name="Line 341" transform="translate(12.786 7.012)"/>
+    </g>
+</svg>

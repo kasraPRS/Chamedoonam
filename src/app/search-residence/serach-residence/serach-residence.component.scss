@@ -1,0 +1,70 @@
+@import "../../styling/shared";
+#map {
+    top: 0;
+    position: sticky;
+}
+.titr {
+    color: $DUST;
+    font-size: 28px;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+@include wide_desktop {
+    .titr {
+        font-size: 24px;
+    }
+}
+
+@include mid_desktop {
+    .titr {
+        font-size: 18px;
+    }
+}
+@include desktop {
+    .titr {
+        font-size: 16px;
+    }
+}
+
+.err-msg {
+    font-family: "IRANsanceBold";
+    color: $BLUEBERRY_TWO;
+}
+// map
+#map {
+    position: sticky;
+    top: 0;
+}
+#card {
+    margin-right: 18px;
+}
+// sorting
+.sorting {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    border: 1px solid $DUST;
+
+    .show-on-map {
+        width: 100%;
+        span {
+            color: $CYAN;
+        }
+        mat-slide-toggle {
+            width: 100%;
+        }
+        .mat-slide-toggle-bar,
+        .mat-slide-toggle-label-before .mat-slide-toggle-bar {
+            margin-left: 8px;
+            margin-right: 0;
+            width: 100% !important;
+        }
+    }
+}
+
+#no-result {
+    margin-top: 85px;
+}

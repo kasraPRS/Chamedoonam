@@ -1,0 +1,99 @@
+<div class="wrapper" fxLayoutGap="35px">
+    <div id="notif" fxLayout="column" fxLayoutAlign="space-around end">
+        <p>لطفا اطلاعات وارد شده را کنترل کرده و پس از اطمینان از درستی آنها , برای پرداخت هزینه اقدام نمایید.</p>
+        <p>توجه فرمایید: در صورتی که اطلاعات زیر اشتباه وارد نموده اید و یا نیاز به تغییر آن دارید, می توانید از دکمه
+            بازگشت
+            استفاده کنید.</p>
+    </div>
+
+    <div id="about_accommodation" fxLayout="column" fxLayoutGap="41px">
+        <mat-card>
+            <mat-card-header fxLayout="column" dir="rtl" fxLayoutGap="16px">
+                <mat-card-title>
+                    <p>اطلاعات اقامتگاه</p>
+                </mat-card-title>
+                <mat-card-subtitle>
+                    <p>اطلاعات وارد شده را کنترل کرده و پس از اطمینان از درستی آنها , برای پرداخت اقدام نمایید</p>
+
+                </mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+
+                <div id="list" fxLayout="column">
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>{{formData.value.startDate}}</span> <span>تاریخ ورود</span>
+                    </div>
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>{{formData.value.endDate}}</span> <span>تاریخ خروج</span>
+                    </div>
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>{{formData.value.guestsCount}}</span> <span>تعداد مسافران</span>
+                    </div>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+
+
+        <mat-card>
+            <mat-card-header fxLayout="column" dir="rtl" fxLayoutGap="16px">
+                <mat-card-title>
+                    <p>سرپرست</p>
+                </mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+
+                <div id="list" fxLayout="row" fxLayoutAlign="space-around center" dir="rtl">
+
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>نام و نام
+                            خانوادگی</span>
+                    </div>
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>شماره همراه</span>
+                    </div>
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>ایمیل</span>
+                    </div>
+                </div>
+
+
+
+                <div id="list" fxLayout="row" fxLayoutAlign="space-around center" dir="rtl">
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>{{formData.value.firstName}} {{formData.value.lastName}}</span>
+                    </div>
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>{{formData.value.phone}}</span>
+                    </div>
+                    <div class="item" fxLayout="row" fxLayoutAlign="space-between none">
+                        <span>{{formData.value.email}}</span>
+                    </div>
+                </div>
+            </mat-card-content>
+
+
+        </mat-card>
+
+
+        <mat-card id="payment" *ngIf="invoiceData">
+            <div id="list" fxLayout="column" fxLayoutGap="20px">
+                <div class="item" fxLayout="row" fxLayoutAlign="space-around none">
+                    <span>{{invoiceData.totalPrice}}</span> <span>مبلغ کل خرید</span>
+                </div>
+                <div class="item" fxLayout="row" fxLayoutAlign="space-around none">
+                    <span>{{invoiceData.totalPrice}}</span> <span>مبلغ قابل پرداخت</span>
+                </div>
+            </div>
+        </mat-card>
+
+
+    </div>
+    <div class="btn-group" fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="16px">
+        <button mat-flat-button color="primary" (click)="back()">بازگشت</button>
+        <button mat-flat-button class="submit-btn" (click)="addOrderAccommodation()">تایید نهایی</button>
+    </div>
+
+</div>

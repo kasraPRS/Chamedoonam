@@ -1,0 +1,17 @@
+<div fxLayout="column" fxLayoutAlign="center stretch" fxLayoutGap="40px">
+    <form [formGroup]="formData" (ngSubmit)="onSubmit()" fxLayout="column" dir="rtl">
+        <mat-form-field appearance="outline">
+            <mat-label>شماره همراه خود را وارد کنید</mat-label>
+            <input matInput placeholder=" شماره  همراه" formControlName="phoneNumber" inputmode="numeric"
+                pattern="[0-9]*">
+            <mat-error *ngIf="f.phoneNumber.errors && f.phoneNumber.errors['pattern']">فرمت شماره موبایل وارد
+                شده
+                نامعتبر
+                است
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-button class="primary" *ngIf="!isWatingForVerification && f.phoneNumber.valid">ارسال کد
+            تایید</button>
+    </form>
+</div>
